@@ -1,0 +1,10 @@
+{
+    "salmon_version": "1.4.0",
+    "libType": "A",
+    "index": "salmon_output/SRR10357372.salmon.index",
+    "mates1": "/scratch/data/covid19-2/find_core/fastq/paired/SRR10357372_1.fastq.gz",
+    "mates2": "/scratch/data/covid19-2/find_core/fastq/paired/SRR10357372_2.fastq.gz",
+    "threads": "4",
+    "output": "salmon_output/SRR10357372.salmon.quant",
+    "auxDir": "aux_info"
+}

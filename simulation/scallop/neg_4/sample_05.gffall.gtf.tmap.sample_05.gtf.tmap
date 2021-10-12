@@ -1,0 +1,5 @@
+ref_gene_id	ref_id	class_code	qry_gene_id	qry_id	num_exons	FPKM	TPM		cov	len	major_iso_id	ref_match_len
+N	N	k	gene.0.0	gene.0.0.2	2	0.000000	0.000000	72288.130200	1710	gene.0.0.2	1260
+N	N	k	gene.0.0	gene.0.0.3	2	0.000000	0.000000	44485.208900	1704	gene.0.0.2	1260
+N	N	k	gene.1.0	gene.1.0.2	2	0.000000	0.000000	72288.130200	1710	gene.0.0.2	1260
+N	N	k	gene.1.0	gene.1.0.3	2	0.000000	0.000000	44485.208900	1704	gene.0.0.2	1260

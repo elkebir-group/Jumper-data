@@ -1,0 +1,31 @@
+[2021-02-06 10:12:21.176] [puff::index::jointLog] [info] Running fixFasta
+[2021-02-06 10:12:21.182] [puff::index::jointLog] [info] Replaced 0 non-ATCG nucleotides
+[2021-02-06 10:12:21.182] [puff::index::jointLog] [info] Clipped poly-A tails from 33 transcripts
+[2021-02-06 10:12:21.183] [puff::index::jointLog] [info] Filter size not provided; estimating from number of distinct k-mers
+[2021-02-06 10:12:21.184] [puff::index::jointLog] [info] ntHll estimated 60129 distinct k-mers, setting filter size to 2^20
+[2021-02-06 10:12:21.261] [puff::index::jointLog] [info] Starting the Pufferfish indexing by reading the GFA binary file.
+[2021-02-06 10:12:21.261] [puff::index::jointLog] [info] Setting the index/BinaryGfa directory salmon_output/SRR10357374.salmon.index
+[2021-02-06 10:12:21.261] [puff::index::jointLog] [info] Done wrapping the rank vector with a rank9sel structure.
+[2021-02-06 10:12:21.261] [puff::index::jointLog] [info] contig count for validation: 94
+[2021-02-06 10:12:21.261] [puff::index::jointLog] [info] Total # of Contigs : 94
+[2021-02-06 10:12:21.261] [puff::index::jointLog] [info] Total # of numerical Contigs : 94
+[2021-02-06 10:12:21.261] [puff::index::jointLog] [info] Total # of contig vec entries: 941
+[2021-02-06 10:12:21.261] [puff::index::jointLog] [info] bits per offset entry 10
+[2021-02-06 10:12:21.261] [puff::index::jointLog] [info] Done constructing the contig vector. 95
+[2021-02-06 10:12:21.261] [puff::index::jointLog] [info] # segments = 94
+[2021-02-06 10:12:21.261] [puff::index::jointLog] [info] total length = 33,718
+[2021-02-06 10:12:21.261] [puff::index::jointLog] [info] Reading the reference files ...
+[2021-02-06 10:12:21.263] [puff::index::jointLog] [info] positional integer width = 16
+[2021-02-06 10:12:21.263] [puff::index::jointLog] [info] seqSize = 33,718
+[2021-02-06 10:12:21.263] [puff::index::jointLog] [info] rankSize = 33,718
+[2021-02-06 10:12:21.263] [puff::index::jointLog] [info] edgeVecSize = 0
+[2021-02-06 10:12:21.263] [puff::index::jointLog] [info] num keys = 30,898
+[2021-02-06 10:12:21.292] [puff::index::jointLog] [info] mphf size = 0.0200119 MB
+[2021-02-06 10:12:21.292] [puff::index::jointLog] [info] chunk size = 8,430
+[2021-02-06 10:12:21.292] [puff::index::jointLog] [info] chunk 0 = [0, 8,430)
+[2021-02-06 10:12:21.292] [puff::index::jointLog] [info] chunk 1 = [8,430, 16,860)
+[2021-02-06 10:12:21.292] [puff::index::jointLog] [info] chunk 2 = [16,860, 25,290)
+[2021-02-06 10:12:21.292] [puff::index::jointLog] [info] chunk 3 = [25,290, 33,688)
+[2021-02-06 10:12:21.295] [puff::index::jointLog] [info] finished populating pos vector
+[2021-02-06 10:12:21.295] [puff::index::jointLog] [info] writing index components
+[2021-02-06 10:12:21.295] [puff::index::jointLog] [info] finished writing dense pufferfish index

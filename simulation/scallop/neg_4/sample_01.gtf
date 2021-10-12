@@ -1,0 +1,18 @@
+NC_045512.2	scallop	transcript	1	29903	1000	.	.	gene_id "gene.0.0"; transcript_id "gene.0.0.0"; RPKM "9.9910"; cov "5.9944";
+NC_045512.2	scallop	exon	1	14177	1000	.	.	gene_id "gene.0.0"; transcript_id "gene.0.0.0"; exon "1"; 
+NC_045512.2	scallop	exon	29573	29903	1000	.	.	gene_id "gene.0.0"; transcript_id "gene.0.0.0"; exon "2"; 
+NC_045512.2	scallop	transcript	1	29903	1000	.	.	gene_id "gene.0.0"; transcript_id "gene.0.0.2"; RPKM "76022.4071"; cov "45612.3191";
+NC_045512.2	scallop	exon	1	62	1000	.	.	gene_id "gene.0.0"; transcript_id "gene.0.0.2"; exon "1"; 
+NC_045512.2	scallop	exon	28262	29903	1000	.	.	gene_id "gene.0.0"; transcript_id "gene.0.0.2"; exon "2"; 
+NC_045512.2	scallop	transcript	1	29903	1000	.	.	gene_id "gene.0.0"; transcript_id "gene.0.0.3"; RPKM "109007.1328"; cov "65402.6664";
+NC_045512.2	scallop	exon	1	68	1000	.	.	gene_id "gene.0.0"; transcript_id "gene.0.0.3"; exon "1"; 
+NC_045512.2	scallop	exon	28262	29903	1000	.	.	gene_id "gene.0.0"; transcript_id "gene.0.0.3"; exon "2"; 
+NC_045512.2	scallop	transcript	1	29903	1000	.	.	gene_id "gene.1.0"; transcript_id "gene.1.0.0"; RPKM "9.9910"; cov "5.9944";
+NC_045512.2	scallop	exon	1	14177	1000	.	.	gene_id "gene.1.0"; transcript_id "gene.1.0.0"; exon "1"; 
+NC_045512.2	scallop	exon	29573	29903	1000	.	.	gene_id "gene.1.0"; transcript_id "gene.1.0.0"; exon "2"; 
+NC_045512.2	scallop	transcript	1	29903	1000	.	.	gene_id "gene.1.0"; transcript_id "gene.1.0.2"; RPKM "76022.4071"; cov "45612.3191";
+NC_045512.2	scallop	exon	1	62	1000	.	.	gene_id "gene.1.0"; transcript_id "gene.1.0.2"; exon "1"; 
+NC_045512.2	scallop	exon	28262	29903	1000	.	.	gene_id "gene.1.0"; transcript_id "gene.1.0.2"; exon "2"; 
+NC_045512.2	scallop	transcript	1	29903	1000	.	.	gene_id "gene.1.0"; transcript_id "gene.1.0.3"; RPKM "109007.1328"; cov "65402.6664";
+NC_045512.2	scallop	exon	1	68	1000	.	.	gene_id "gene.1.0"; transcript_id "gene.1.0.3"; exon "1"; 
+NC_045512.2	scallop	exon	28262	29903	1000	.	.	gene_id "gene.1.0"; transcript_id "gene.1.0.3"; exon "2"; 

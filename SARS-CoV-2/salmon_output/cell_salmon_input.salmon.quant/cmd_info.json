@@ -1,0 +1,10 @@
+{
+    "salmon_version": "1.3.0",
+    "libType": "A",
+    "index": "salmon_output/cell_salmon_input.salmon.index",
+    "mates1": "/scratch/data/covid19/transcriptomics/u6sq7/osfstorage/sars-cov-2-transcriptome/rnaseq-mgi/rawdata-1/Vero_SCV2_1.fq.gz",
+    "mates2": "/scratch/data/covid19/transcriptomics/u6sq7/osfstorage/sars-cov-2-transcriptome/rnaseq-mgi/rawdata-1/Vero_SCV2_2.fq.gz",
+    "threads": "16",
+    "output": "salmon_output/cell_salmon_input.salmon.quant",
+    "auxDir": "aux_info"
+}

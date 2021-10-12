@@ -1,0 +1,13 @@
+ref_gene_id	ref_id	class_code	qry_gene_id	qry_id	num_exons	FPKM	TPM		cov	len	major_iso_id	ref_match_len
+ORF1ab	ORF1ab	o	gene.0.0	gene.0.0.0	2	0.000000	0.000000	58.903800	14508	gene.0.0.0	21290
+ORF1ab	ORF1ab	o	gene.0.0	gene.0.0.1	3	0.000000	0.000000	5.000900	14423	gene.0.0.0	21290
+S	S	k	gene.0.0	gene.0.0.2	3	0.000000	0.000000	22.869700	5888	gene.0.0.0	3822
+S	S	k	gene.0.0	gene.0.0.3	4	0.000000	0.000000	6.330600	5803	gene.0.0.0	3822
+N	N	k	gene.0.0	gene.0.0.4	2	0.000000	0.000000	46090.196600	1704	gene.0.0.0	1260
+N	N	k	gene.0.0	gene.0.0.5	2	0.000000	0.000000	71976.557300	1710	gene.0.0.0	1260
+ORF1ab	ORF1ab	o	gene.1.0	gene.1.0.0	2	0.000000	0.000000	58.903800	14508	gene.0.0.0	21290
+ORF1ab	ORF1ab	o	gene.1.0	gene.1.0.1	3	0.000000	0.000000	5.000900	14423	gene.0.0.0	21290
+S	S	k	gene.1.0	gene.1.0.2	3	0.000000	0.000000	22.869700	5888	gene.0.0.0	3822
+S	S	k	gene.1.0	gene.1.0.3	4	0.000000	0.000000	6.330600	5803	gene.0.0.0	3822
+N	N	k	gene.1.0	gene.1.0.4	2	0.000000	0.000000	71976.557300	1710	gene.0.0.0	1260
+N	N	k	gene.1.0	gene.1.0.5	2	0.000000	0.000000	46090.196600	1704	gene.0.0.0	1260

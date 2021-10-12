@@ -1,0 +1,3471 @@
+NC_045512.2	29903
+count is 125747
+here
+ref legnth is 29903
+rejected 587 reads
+number of splice edges -- 15
+number of phasing reads -- 62
+total number of reads -- 2999369
+number of ST paths -- 112
+number of transcripts is 12
+number of transcript splice edges is 11
+--------------------------------------------------
+Using license file /home/sashitt2/gurobi.lic
+Academic license - for non-commercial use only
+--------------------------------------------------
+max phasing count is 1701540
+total reads is 2999369
+--------------------------------------------------
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 1
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1085 columns and 3414 nonzeros
+Model fingerprint: 0x7d23353c
+Variable types: 1070 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.02s
+Presolved: 593 rows, 1084 columns, 6410 nonzeros
+Variable types: 1069 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -3.017908e+02, 415 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -301.79083    0   15          - -301.79083      -     -    0s
+H    0     0                    -8966.426128 -301.79083  96.6%     -    0s
+H    0     0                    -1304.758253 -301.79083  76.9%     -    0s
+     0     0 -683.71048    0    3 -1304.7583 -683.71048  47.6%     -    0s
+     0     0 -693.82627    0    8 -1304.7583 -693.82627  46.8%     -    0s
+     0     0 -1182.7121    0    3 -1304.7583 -1182.7121  9.35%     -    0s
+     0     0     cutoff    0      -1304.7583 -1304.7583  0.00%     -    0s
+
+Cutting planes:
+  Gomory: 8
+  Implied bound: 40
+  MIR: 34
+  Flow cover: 8
+  Relax-and-lift: 4
+
+Explored 1 nodes (1250 simplex iterations) in 0.16 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 2: -1304.76 -8966.43 
+No other solutions better than -1304.76
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -1.304758252873e+03, best bound -1.304758252873e+03, gap 0.0000%
+solution G:
+{0: 0.8993563487419528}
+solution C:
+{}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 1
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 994 columns and 1963 nonzeros
+Model fingerprint: 0xb206ba49
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 59 rows and 465 columns
+Presolve time: 0.00s
+Presolved: 66 rows, 529 columns, 1056 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -3.3539617e+02   4.957932e+01   0.000000e+00      0s
+     150   -8.7712130e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 150 iterations and 0.00 seconds
+Optimal objective -8.771213029e+02
+solution G:
+{}
+solution C:
+{0: 0.001953125, 1: 0.8651818040520772}
+**************************************************
+iteration 1
+{0: 0.001953125, 1: 0.8651818040520772}
+[0, 11]
+**************************************************
+**************************************************
+number of chosen paths = 1
+[1]
+[11]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 2
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1086 columns and 3423 nonzeros
+Model fingerprint: 0x9519187c
+Variable types: 1071 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1085 columns, 5807 nonzeros
+Variable types: 1070 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -1.061871e+02, 276 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -106.18709    0   15          - -106.18709      -     -    0s
+H    0     0                    -877.1213029 -106.18709  87.9%     -    0s
+H    0     0                    -865.7950168 -106.18709  87.7%     -    0s
+     0     0 -410.72070    0    3 -865.79502 -410.72070  52.6%     -    0s
+H    0     0                    -856.6576208 -410.72070  52.1%     -    0s
+     0     0 -471.34527    0    3 -856.65762 -471.34527  45.0%     -    0s
+     0     0 -471.42112    0    3 -856.65762 -471.42112  45.0%     -    0s
+     0     0 -497.91044    0    5 -856.65762 -497.91044  41.9%     -    0s
+     0     0 -497.91157    0    5 -856.65762 -497.91157  41.9%     -    0s
+     0     0 -500.20458    0    5 -856.65762 -500.20458  41.6%     -    0s
+     0     0 -500.80914    0    6 -856.65762 -500.80914  41.5%     -    0s
+     0     0 -501.34024    0    6 -856.65762 -501.34024  41.5%     -    0s
+     0     0 -501.59542    0    6 -856.65762 -501.59542  41.4%     -    0s
+     0     0 -501.59980    0    6 -856.65762 -501.59980  41.4%     -    0s
+     0     0 -504.62657    0    6 -856.65762 -504.62657  41.1%     -    0s
+     0     0 -504.62675    0    6 -856.65762 -504.62675  41.1%     -    0s
+     0     0 -505.59007    0    5 -856.65762 -505.59007  41.0%     -    0s
+     0     0 -505.82915    0    5 -856.65762 -505.82915  41.0%     -    0s
+     0     0 -505.85759    0    6 -856.65762 -505.85759  40.9%     -    0s
+     0     0 -506.18871    0    6 -856.65762 -506.18871  40.9%     -    0s
+     0     0 -506.18877    0    6 -856.65762 -506.18877  40.9%     -    0s
+     0     0 -506.47328    0    6 -856.65762 -506.47328  40.9%     -    0s
+     0     0 -506.47328    0    6 -856.65762 -506.47328  40.9%     -    0s
+     0     0 -506.47328    0   10 -856.65762 -506.47328  40.9%     -    0s
+     0     0 -506.47328    0    5 -856.65762 -506.47328  40.9%     -    0s
+     0     0 -511.16957    0    5 -856.65762 -511.16957  40.3%     -    0s
+     0     0 -513.55098    0    6 -856.65762 -513.55098  40.1%     -    0s
+     0     0 -514.26376    0    6 -856.65762 -514.26376  40.0%     -    0s
+     0     0 -514.38514    0    6 -856.65762 -514.38514  40.0%     -    0s
+     0     0 -514.38515    0    6 -856.65762 -514.38515  40.0%     -    0s
+     0     0 -515.78896    0    5 -856.65762 -515.78896  39.8%     -    0s
+     0     0 -517.96294    0    5 -856.65762 -517.96294  39.5%     -    0s
+     0     0 -517.99644    0    5 -856.65762 -517.99644  39.5%     -    0s
+     0     0 -522.22268    0    5 -856.65762 -522.22268  39.0%     -    0s
+     0     0 -523.43052    0    5 -856.65762 -523.43052  38.9%     -    0s
+     0     0 -523.51139    0    5 -856.65762 -523.51139  38.9%     -    0s
+     0     0 -523.52131    0    5 -856.65762 -523.52131  38.9%     -    0s
+     0     0 -523.52131    0    5 -856.65762 -523.52131  38.9%     -    0s
+H    0     0                    -833.6808469 -523.52131  37.2%     -    0s
+     0     2 -524.04695    0    5 -833.68085 -524.04695  37.1%     -    0s
+*   14     6               6    -805.7095670 -540.83047  32.9%  42.1    0s
+
+Cutting planes:
+  Gomory: 8
+  Implied bound: 66
+  MIR: 26
+  Flow cover: 31
+  RLT: 8
+  BQP: 1
+
+Explored 33 nodes (2882 simplex iterations) in 0.42 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 5: -805.71 -833.681 -856.658 ... -877.121
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -8.057095669980e+02, best bound -8.056832459265e+02, gap 0.0033%
+solution G:
+{0: 0.03125}
+solution C:
+{0: 0.8479191047396138}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 2
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1001 columns and 2147 nonzeros
+Model fingerprint: 0x4178cb1e
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 48 rows and 384 columns
+Presolve time: 0.00s
+Presolved: 77 rows, 617 columns, 1403 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -2.9290525e+02   4.013586e+01   0.000000e+00      0s
+     205   -7.3926756e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 205 iterations and 0.00 seconds
+Optimal objective -7.392675554e+02
+solution G:
+{}
+solution C:
+{0: 0.8385797615564657, 1: 0.00048828125, 2: 0.0, 3: 0.0, 4: 0.0, 5: 0.01123046875, 6: 0.00390625, 7: 0.015625, 8: 0.0}
+**************************************************
+iteration 2
+{0: 0.8385797615564657, 1: 0.00048828125, 2: 0.0, 3: 0.0, 4: 0.0, 5: 0.01123046875, 6: 0.00390625, 7: 0.015625, 8: 0.0}
+[11, 0, 192, 96, 288, 4, 196, 100, 292]
+**************************************************
+**************************************************
+number of chosen paths = 2
+[0, 7]
+[11, 100]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 3
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1087 columns and 3445 nonzeros
+Model fingerprint: 0xe0ec3735
+Variable types: 1072 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -2809.722557
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1086 columns, 5829 nonzeros
+Variable types: 1071 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -1.061871e+02, 298 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -106.18709    0   15 -2809.7226 -106.18709  96.2%     -    0s
+H    0     0                    -745.9790570 -106.18709  85.8%     -    0s
+     0     0 -372.38726    0    3 -745.97906 -372.38726  50.1%     -    0s
+H    0     0                    -743.1744811 -372.38726  49.9%     -    0s
+     0     0 -406.43102    0    3 -743.17448 -406.43102  45.3%     -    0s
+     0     0 -406.53170    0    3 -743.17448 -406.53170  45.3%     -    0s
+     0     0 -406.53172    0    3 -743.17448 -406.53172  45.3%     -    0s
+     0     0 -431.16601    0    5 -743.17448 -431.16601  42.0%     -    0s
+     0     0 -432.51710    0    6 -743.17448 -432.51710  41.8%     -    0s
+     0     0 -432.51787    0    6 -743.17448 -432.51787  41.8%     -    0s
+     0     0 -433.13146    0    7 -743.17448 -433.13146  41.7%     -    0s
+     0     0 -437.89392    0    8 -743.17448 -437.89392  41.1%     -    0s
+     0     0 -438.43301    0    8 -743.17448 -438.43301  41.0%     -    0s
+     0     0 -438.43302    0    8 -743.17448 -438.43302  41.0%     -    0s
+     0     0 -440.38163    0    8 -743.17448 -440.38163  40.7%     -    0s
+     0     0 -440.39914    0    4 -743.17448 -440.39914  40.7%     -    0s
+     0     0 -441.22555    0    6 -743.17448 -441.22555  40.6%     -    0s
+H    0     0                    -741.9611699 -441.22555  40.5%     -    0s
+     0     0 -441.38844    0    6 -741.96117 -441.38844  40.5%     -    0s
+     0     0 -441.42988    0    6 -741.96117 -441.42988  40.5%     -    0s
+     0     0 -444.14278    0    4 -741.96117 -444.14278  40.1%     -    0s
+     0     0 -444.25041    0    6 -741.96117 -444.25041  40.1%     -    0s
+     0     0 -446.84226    0    4 -741.96117 -446.84226  39.8%     -    0s
+     0     0 -446.84927    0    4 -741.96117 -446.84927  39.8%     -    0s
+     0     0 -449.32129    0    6 -741.96117 -449.32129  39.4%     -    0s
+     0     0 -450.25361    0    7 -741.96117 -450.25361  39.3%     -    0s
+     0     0 -450.29651    0    6 -741.96117 -450.29651  39.3%     -    0s
+     0     0 -476.45754    0    8 -741.96117 -476.45754  35.8%     -    0s
+     0     0 -480.37629    0    8 -741.96117 -480.37629  35.3%     -    0s
+     0     0 -481.13934    0    6 -741.96117 -481.13934  35.2%     -    0s
+     0     0 -481.18311    0    7 -741.96117 -481.18311  35.1%     -    0s
+     0     0 -482.70684    0    6 -741.96117 -482.70684  34.9%     -    0s
+     0     0 -482.82868    0    7 -741.96117 -482.82868  34.9%     -    0s
+     0     0 -486.81982    0    6 -741.96117 -486.81982  34.4%     -    0s
+H    0     0                    -734.0181833 -486.81982  33.7%     -    0s
+     0     0 -486.82429    0    6 -734.01818 -486.82429  33.7%     -    0s
+     0     0 -487.27838    0    6 -734.01818 -487.27838  33.6%     -    0s
+     0     0 -487.27838    0    6 -734.01818 -487.27838  33.6%     -    0s
+     0     2 -487.56456    0    6 -734.01818 -487.56456  33.6%     -    0s
+*   69     5               3    -731.9842936 -580.41630  20.7%  40.8    0s
+
+Cutting planes:
+  Gomory: 8
+  Implied bound: 65
+  MIR: 34
+  Flow cover: 11
+  RLT: 12
+  Relax-and-lift: 1
+  BQP: 1
+
+Explored 76 nodes (5176 simplex iterations) in 0.59 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 5: -731.984 -734.018 -741.961 ... -745.979
+No other solutions better than -731.984
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -7.319842935909e+02, best bound -7.319842935909e+02, gap 0.0000%
+solution G:
+{0: 0.12500000000000006}
+solution C:
+{0: 0.7217854008191925, 1: 0.03125}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 3
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 996 columns and 1992 nonzeros
+Model fingerprint: 0x16318226
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 51 rows and 401 columns
+Presolve time: 0.00s
+Presolved: 74 rows, 595 columns, 1214 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -2.0470868e+02   4.163110e+01   0.000000e+00      0s
+     179   -6.6760724e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 179 iterations and 0.00 seconds
+Optimal objective -6.676072402e+02
+solution G:
+{}
+solution C:
+{0: 0.7140700427881802, 1: 0.03076171875, 2: 0.00048828125, 3: 0.125}
+**************************************************
+iteration 3
+{0: 0.7140700427881802, 1: 0.03076171875, 2: 0.00048828125, 3: 0.125}
+[11, 100, 0, 8]
+**************************************************
+**************************************************
+number of chosen paths = 3
+[0, 3, 1]
+[11, 8, 100]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 4
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1088 columns and 3452 nonzeros
+Model fingerprint: 0x6cdde42c
+Variable types: 1073 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -2809.722557
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1087 columns, 5836 nonzeros
+Variable types: 1072 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -1.061708e+02, 338 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 -106.17080    0   15 -2809.7226 -106.17080  96.2%     -    0s
+H    0     0                    -671.6251274 -106.17080  84.2%     -    0s
+     0     0 -298.77716    0    3 -671.62513 -298.77716  55.5%     -    0s
+H    0     0                    -668.8205514 -298.77716  55.3%     -    0s
+     0     0 -338.04040    0    3 -668.82055 -338.04040  49.5%     -    0s
+     0     0 -338.14690    0    3 -668.82055 -338.14690  49.4%     -    0s
+     0     0 -356.63169    0    7 -668.82055 -356.63169  46.7%     -    0s
+H    0     0                    -667.6072402 -356.63169  46.6%     -    0s
+     0     0 -356.73738    0    6 -667.60724 -356.73738  46.6%     -    0s
+     0     0 -356.74223    0    6 -667.60724 -356.74223  46.6%     -    0s
+     0     0 -362.58088    0    5 -667.60724 -362.58088  45.7%     -    0s
+     0     0 -362.60975    0    5 -667.60724 -362.60975  45.7%     -    0s
+     0     0 -364.92404    0    5 -667.60724 -364.92404  45.3%     -    0s
+     0     0 -364.97864    0    5 -667.60724 -364.97864  45.3%     -    0s
+     0     0 -365.48026    0    4 -667.60724 -365.48026  45.3%     -    0s
+     0     0 -365.48029    0    4 -667.60724 -365.48029  45.3%     -    0s
+     0     0 -367.63210    0    4 -667.60724 -367.63210  44.9%     -    0s
+     0     0 -367.64537    0    4 -667.60724 -367.64537  44.9%     -    0s
+     0     0 -368.00165    0    5 -667.60724 -368.00165  44.9%     -    0s
+     0     0 -368.12847    0    5 -667.60724 -368.12847  44.9%     -    0s
+     0     0 -368.12857    0    5 -667.60724 -368.12857  44.9%     -    0s
+     0     0 -370.40600    0    4 -667.60724 -370.40600  44.5%     -    0s
+     0     0 -370.74894    0    6 -667.60724 -370.74894  44.5%     -    0s
+     0     0 -370.75047    0    6 -667.60724 -370.75047  44.5%     -    0s
+     0     0 -370.85752    0    6 -667.60724 -370.85752  44.4%     -    0s
+     0     0 -370.93045    0    6 -667.60724 -370.93045  44.4%     -    0s
+     0     0 -370.95270    0    6 -667.60724 -370.95270  44.4%     -    0s
+     0     0 -370.95270    0    6 -667.60724 -370.95270  44.4%     -    0s
+     0     2 -370.96837    0    6 -667.60724 -370.96837  44.4%     -    0s
+
+Cutting planes:
+  Gomory: 8
+  Implied bound: 57
+  MIR: 41
+  Flow cover: 27
+  RLT: 12
+  Relax-and-lift: 2
+  BQP: 1
+
+Explored 36 nodes (3048 simplex iterations) in 0.43 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 3: -667.607 -668.821 -671.625 
+No other solutions better than -667.607
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -6.676072402464e+02, best bound -6.676072402464e+02, gap 0.0000%
+solution G:
+{0: 0.00048828125}
+solution C:
+{0: 0.7140700427881802, 1: 0.125, 2: 0.03076171875}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 4
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 996 columns and 1992 nonzeros
+Model fingerprint: 0x3413b15f
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 51 rows and 401 columns
+Presolve time: 0.00s
+Presolved: 74 rows, 595 columns, 1214 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -2.0470868e+02   4.163110e+01   0.000000e+00      0s
+     179   -6.6760724e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 179 iterations and 0.00 seconds
+Optimal objective -6.676072402e+02
+solution G:
+{}
+solution C:
+{0: 0.7140700427881802, 1: 0.125, 2: 0.03076171875, 3: 0.00048828125}
+**************************************************
+iteration 4
+{0: 0.7140700427881802, 1: 0.125, 2: 0.03076171875, 3: 0.00048828125}
+[11, 8, 100, 0]
+**************************************************
+**************************************************
+number of chosen paths = 4
+[0, 1, 2, 3]
+[11, 8, 100, 0]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 5
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1089 columns and 3484 nonzeros
+Model fingerprint: 0x5b74c1c0
+Variable types: 1074 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -2809.722557
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1088 columns, 5868 nonzeros
+Variable types: 1073 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.801722e+01, 274 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -88.01722    0   15 -2809.7226  -88.01722  96.9%     -    0s
+     0     0 -221.65361    0    7 -2809.7226 -221.65361  92.1%     -    0s
+H    0     0                    -660.9753523 -221.65361  66.5%     -    0s
+     0     0 -221.66394    0    7 -660.97535 -221.66394  66.5%     -    0s
+     0     0 -231.42517    0    7 -660.97535 -231.42517  65.0%     -    0s
+H    0     0                    -607.0784704 -231.42517  61.9%     -    0s
+     0     0 -238.03995    0    7 -607.07847 -238.03995  60.8%     -    0s
+     0     0 -238.39895    0   10 -607.07847 -238.39895  60.7%     -    0s
+     0     0 -238.40826    0   10 -607.07847 -238.40826  60.7%     -    0s
+     0     0 -240.33064    0    7 -607.07847 -240.33064  60.4%     -    0s
+     0     0 -240.62019    0    8 -607.07847 -240.62019  60.4%     -    0s
+     0     0 -240.62359    0    7 -607.07847 -240.62359  60.4%     -    0s
+     0     0 -240.89694    0    9 -607.07847 -240.89694  60.3%     -    0s
+     0     0 -241.07852    0    9 -607.07847 -241.07852  60.3%     -    0s
+     0     0 -241.07866    0    9 -607.07847 -241.07866  60.3%     -    0s
+     0     0 -241.08552    0    9 -607.07847 -241.08552  60.3%     -    0s
+     0     0 -241.08552    0    9 -607.07847 -241.08552  60.3%     -    0s
+     0     2 -241.86993    0    9 -607.07847 -241.86993  60.2%     -    0s
+*   38     8               3    -605.8930033 -287.10296  52.6%  67.4    0s
+
+Cutting planes:
+  Gomory: 7
+  Implied bound: 56
+  MIR: 10
+  Flow cover: 32
+  RLT: 11
+
+Explored 47 nodes (4455 simplex iterations) in 0.42 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 4: -605.893 -607.078 -660.975 -2809.72 
+No other solutions better than -605.893
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -6.058930032682e+02, best bound -6.058930032682e+02, gap 0.0000%
+solution G:
+{0: 0.21407004278818023}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.03076171875, 3: 0.00048828125}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 5
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 997 columns and 2003 nonzeros
+Model fingerprint: 0x635950fb
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 46 rows and 368 columns
+Presolve time: 0.00s
+Presolved: 79 rows, 629 columns, 1290 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -1.3310295e+02   4.873211e+01   0.000000e+00      0s
+     170   -6.0589300e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 170 iterations and 0.00 seconds
+Optimal objective -6.058930033e+02
+solution G:
+{}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.03076171875, 3: 0.00048828125, 4: 0.21407004278818023}
+**************************************************
+iteration 5
+{0: 0.5, 1: 0.125, 2: 0.03076171875, 3: 0.00048828125, 4: 0.21407004278818023}
+[11, 8, 100, 0, 2]
+**************************************************
+**************************************************
+number of chosen paths = 5
+[0, 4, 1, 2, 3]
+[11, 2, 8, 100, 0]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 6
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1090 columns and 3495 nonzeros
+Model fingerprint: 0xc601ce08
+Variable types: 1075 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -3058.305684
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1089 columns, 5879 nonzeros
+Variable types: 1074 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.801722e+01, 274 iterations, 0.00 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -88.01722    0   15 -3058.3057  -88.01722  97.1%     -    0s
+     0     0 -185.52146    0    7 -3058.3057 -185.52146  93.9%     -    0s
+H    0     0                    -599.2575245 -185.52146  69.0%     -    0s
+     0     0 -185.80305    0    8 -599.25752 -185.80305  69.0%     -    0s
+     0     0 -185.81874    0    8 -599.25752 -185.81874  69.0%     -    0s
+     0     0 -192.95767    0    7 -599.25752 -192.95767  67.8%     -    0s
+H    0     0                    -567.7892757 -192.95767  66.0%     -    0s
+     0     0 -193.01311    0    7 -567.78928 -193.01311  66.0%     -    0s
+     0     0 -194.76910    0    8 -567.78928 -194.76910  65.7%     -    0s
+     0     0 -195.48729    0    8 -567.78928 -195.48729  65.6%     -    0s
+     0     0 -195.53420    0    8 -567.78928 -195.53420  65.6%     -    0s
+     0     0 -197.11128    0   10 -567.78928 -197.11128  65.3%     -    0s
+     0     0 -197.16373    0   10 -567.78928 -197.16373  65.3%     -    0s
+     0     0 -198.09312    0    9 -567.78928 -198.09312  65.1%     -    0s
+H    0     0                    -566.1824694 -198.09312  65.0%     -    0s
+     0     0 -198.09501    0    9 -566.18247 -198.09501  65.0%     -    0s
+     0     0 -198.31166    0    9 -566.18247 -198.31166  65.0%     -    0s
+     0     0 -198.31166    0    9 -566.18247 -198.31166  65.0%     -    0s
+     0     2 -198.51670    0    9 -566.18247 -198.51670  64.9%     -    0s
+H   54    26                    -562.8777935 -233.84923  58.5%  52.8    0s
+*   58    26               5    -560.1366126 -233.84923  58.3%  50.9    0s
+*   59    25               5    -558.1529135 -233.84923  58.1%  50.2    0s
+
+Cutting planes:
+  Gomory: 9
+  Implied bound: 53
+  MIR: 54
+  Flow cover: 44
+  RLT: 10
+  BQP: 1
+
+Explored 105 nodes (8932 simplex iterations) in 0.51 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 7: -558.153 -560.137 -562.878 ... -3058.31
+No other solutions better than -558.153
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -5.581529135473e+02, best bound -5.581529135473e+02, gap 0.0000%
+solution G:
+{0: 0.04687500000000001}
+solution C:
+{0: 0.5, 1: 0.1849228807050907, 2: 0.125, 3: 0.01513671875, 4: 0.00048828125}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 6
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1000 columns and 2063 nonzeros
+Model fingerprint: 0xb00f80d6
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 32 rows and 256 columns
+Presolve time: 0.00s
+Presolved: 93 rows, 744 columns, 1567 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -7.9868825e+01   5.448638e+01   0.000000e+00      0s
+     209   -5.5172284e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 209 iterations and 0.00 seconds
+Optimal objective -5.517228396e+02
+solution G:
+{}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.125, 3: 0.01513671875, 4: 0.00048828125, 5: 0.0, 6: 0.09110610133349352, 7: 0.00390625}
+**************************************************
+iteration 6
+{0: 0.5, 1: 0.125, 2: 0.125, 3: 0.01513671875, 4: 0.00048828125, 5: 0.0, 6: 0.09110610133349352, 7: 0.00390625}
+[11, 2, 8, 100, 0, 48, 6, 54]
+**************************************************
+**************************************************
+number of chosen paths = 6
+[0, 1, 2, 6, 3, 4]
+[11, 2, 8, 6, 100, 0]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 7
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1091 columns and 3513 nonzeros
+Model fingerprint: 0x10da9790
+Variable types: 1076 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -2809.722557
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1090 columns, 5897 nonzeros
+Variable types: 1075 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.772507e+01, 312 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -87.72507    0   14 -2809.7226  -87.72507  96.9%     -    0s
+H    0     0                    -559.1240719  -87.72507  84.3%     -    0s
+     0     0 -152.07308    0    8 -559.12407 -152.07308  72.8%     -    0s
+H    0     0                    -553.4742707 -152.07308  72.5%     -    0s
+     0     0 -152.09062    0    9 -553.47427 -152.09062  72.5%     -    0s
+     0     0 -159.86688    0    9 -553.47427 -159.86688  71.1%     -    0s
+     0     0 -163.08400    0    9 -553.47427 -163.08400  70.5%     -    0s
+     0     0 -163.28253    0    9 -553.47427 -163.28253  70.5%     -    0s
+     0     0 -163.72590    0    9 -553.47427 -163.72590  70.4%     -    0s
+     0     0 -163.76981    0    9 -553.47427 -163.76981  70.4%     -    0s
+     0     0 -163.77258    0    9 -553.47427 -163.77258  70.4%     -    0s
+     0     0 -168.88430    0    8 -553.47427 -168.88430  69.5%     -    0s
+H    0     0                    -521.4706492 -168.88430  67.6%     -    0s
+     0     0 -169.02924    0    8 -521.47065 -169.02924  67.6%     -    0s
+     0     0 -171.88221    0   10 -521.47065 -171.88221  67.0%     -    0s
+     0     0 -172.09332    0    9 -521.47065 -172.09332  67.0%     -    0s
+     0     0 -172.12549    0    9 -521.47065 -172.12549  67.0%     -    0s
+     0     0 -172.62921    0   10 -521.47065 -172.62921  66.9%     -    0s
+     0     0 -172.63780    0   10 -521.47065 -172.63780  66.9%     -    0s
+     0     0 -173.54478    0   10 -521.47065 -173.54478  66.7%     -    0s
+     0     0 -173.95367    0   10 -521.47065 -173.95367  66.6%     -    0s
+     0     0 -173.99592    0   10 -521.47065 -173.99592  66.6%     -    0s
+     0     0 -174.27828    0   12 -521.47065 -174.27828  66.6%     -    0s
+     0     0 -174.58407    0   13 -521.47065 -174.58407  66.5%     -    0s
+     0     0 -174.60097    0   13 -521.47065 -174.60097  66.5%     -    0s
+     0     0 -174.70481    0   11 -521.47065 -174.70481  66.5%     -    0s
+     0     0 -174.70481    0   11 -521.47065 -174.70481  66.5%     -    0s
+     0     2 -174.86022    0   11 -521.47065 -174.86022  66.5%     -    0s
+*   54    20               4    -520.4744021 -205.05326  60.6%  58.4    0s
+
+Cutting planes:
+  Gomory: 8
+  Implied bound: 39
+  MIR: 78
+  Flow cover: 33
+  RLT: 15
+  Relax-and-lift: 2
+
+Explored 88 nodes (7894 simplex iterations) in 0.61 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 5: -520.474 -521.471 -553.474 ... -2809.72
+No other solutions better than -520.474
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -5.204744021391e+02, best bound -5.204744021391e+02, gap 0.0000%
+solution G:
+{0: 0.015624999999999993}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.125, 3: 0.08307398035800098, 4: 0.01513671875, 5: 0.00048828125}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 7
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1005 columns and 2163 nonzeros
+Model fingerprint: 0x36ae69c7
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 22 rows and 176 columns
+Presolve time: 0.00s
+Presolved: 103 rows, 829 columns, 1822 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -3.2817330e+01   5.954573e+01   0.000000e+00      0s
+     242   -5.1685962e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 242 iterations and 0.00 seconds
+Optimal objective -5.168596204e+02
+solution G:
+{}
+solution C:
+{0: 0.5, 1: 0.12109260715330603, 2: 0.125, 3: 0.046875, 4: 0.01513671875, 5: 0.00048828125, 6: 0.0, 7: 0.0, 8: 0.0, 9: 0.05859375, 10: 0.0, 11: 0.0, 12: 0.00390625}
+**************************************************
+iteration 7
+{0: 0.5, 1: 0.12109260715330603, 2: 0.125, 3: 0.046875, 4: 0.01513671875, 5: 0.00048828125, 6: 0.0, 7: 0.0, 8: 0.0, 9: 0.05859375, 10: 0.0, 11: 0.0, 12: 0.00390625}
+[11, 2, 8, 6, 100, 0, 192, 48, 240, 7, 199, 55, 247]
+**************************************************
+**************************************************
+number of chosen paths = 7
+[0, 2, 1, 9, 3, 4, 5]
+[11, 8, 2, 7, 6, 100, 0]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 8
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1092 columns and 3528 nonzeros
+Model fingerprint: 0x910976db
+Variable types: 1077 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -2809.722557
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1091 columns, 5912 nonzeros
+Variable types: 1076 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.772507e+01, 332 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -87.72507    0   14 -2809.7226  -87.72507  96.9%     -    0s
+H    0     0                    -520.2895313  -87.72507  83.1%     -    0s
+     0     0 -124.67108    0   10 -520.28953 -124.67108  76.0%     -    0s
+     0     0 -124.75250    0   10 -520.28953 -124.75250  76.0%     -    0s
+     0     0 -134.31355    0   10 -520.28953 -134.31355  74.2%     -    0s
+H    0     0                    -517.0352579 -134.31355  74.0%     -    0s
+     0     0 -134.31533    0   10 -517.03526 -134.31533  74.0%     -    0s
+     0     0 -143.82945    0    8 -517.03526 -143.82945  72.2%     -    0s
+     0     0 -144.61737    0    9 -517.03526 -144.61737  72.0%     -    0s
+     0     0 -144.97494    0    8 -517.03526 -144.97494  72.0%     -    0s
+     0     0 -144.97517    0    8 -517.03526 -144.97517  72.0%     -    0s
+     0     0 -145.92838    0   10 -517.03526 -145.92838  71.8%     -    0s
+     0     0 -146.93570    0   10 -517.03526 -146.93570  71.6%     -    0s
+     0     0 -147.05203    0   10 -517.03526 -147.05203  71.6%     -    0s
+     0     0 -147.07425    0   10 -517.03526 -147.07425  71.6%     -    0s
+     0     0 -147.56003    0    9 -517.03526 -147.56003  71.5%     -    0s
+     0     0 -147.56061    0    9 -517.03526 -147.56061  71.5%     -    0s
+     0     0 -147.59941    0    9 -517.03526 -147.59941  71.5%     -    0s
+     0     0 -147.59941    0    9 -517.03526 -147.59941  71.5%     -    0s
+     0     2 -147.61722    0    9 -517.03526 -147.61722  71.4%     -    0s
+*   26    13               4    -516.8851744 -169.05242  67.3%  56.7    0s
+*   27    12               4    -516.6764486 -169.05242  67.3%  55.0    0s
+*   37    18              10    -510.2564145 -170.58057  66.6%  52.3    0s
+*   61    11              10    -509.8388767 -175.72342  65.5%  76.4    0s
+
+Cutting planes:
+  Gomory: 12
+  Implied bound: 36
+  MIR: 50
+  Flow cover: 40
+  RLT: 14
+  Relax-and-lift: 4
+
+Explored 117 nodes (11584 simplex iterations) in 0.61 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 7: -509.839 -510.256 -516.676 ... -2809.72
+No other solutions better than -509.839
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -5.098388767259e+02, best bound -5.098388767259e+02, gap 0.0000%
+solution G:
+{0: 0.0078125}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.11189040557343474, 3: 0.06250000000000008, 4: 0.046875, 5: 0.01513671875, 6: 0.00048828125}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 8
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1006 columns and 2174 nonzeros
+Model fingerprint: 0x4bc05495
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 22 rows and 176 columns
+Presolve time: 0.00s
+Presolved: 103 rows, 830 columns, 1833 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -2.1768516e+01   5.859174e+01   0.000000e+00      0s
+     292   -5.0955697e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 292 iterations and 0.00 seconds
+Optimal objective -5.095569653e+02
+solution G:
+{}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.11632693643943827, 3: 0.0625, 4: 0.03515625, 5: 0.01513671875, 6: 0.00048828125, 7: 0.0, 8: 0.0, 9: 0.0, 10: 0.0078125, 11: 0.00390625, 12: 0.00390625, 13: 0.0}
+**************************************************
+iteration 8
+{0: 0.5, 1: 0.125, 2: 0.11632693643943827, 3: 0.0625, 4: 0.03515625, 5: 0.01513671875, 6: 0.00048828125, 7: 0.0, 8: 0.0, 9: 0.0, 10: 0.0078125, 11: 0.00390625, 12: 0.00390625, 13: 0.0}
+[11, 8, 2, 7, 6, 100, 0, 192, 48, 240, 1, 193, 49, 241]
+**************************************************
+**************************************************
+number of chosen paths = 8
+[0, 1, 2, 3, 4, 5, 10, 6]
+[11, 8, 2, 7, 6, 100, 1, 0]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 9
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1093 columns and 3541 nonzeros
+Model fingerprint: 0x1cd2fe57
+Variable types: 1078 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -5377.562857
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1092 columns, 5925 nonzeros
+Variable types: 1077 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.764839e+01, 317 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -87.64839    0   13 -5377.5629  -87.64839  98.4%     -    0s
+     0     0 -119.59700    0   12 -5377.5629 -119.59700  97.8%     -    0s
+H    0     0                    -512.9928824 -119.59700  76.7%     -    0s
+H    0     0                    -509.7387103 -119.59700  76.5%     -    0s
+     0     0 -119.59715    0   12 -509.73871 -119.59715  76.5%     -    0s
+     0     0 -128.63817    0   11 -509.73871 -128.63817  74.8%     -    0s
+     0     0 -129.63759    0    9 -509.73871 -129.63759  74.6%     -    0s
+     0     0 -130.04419    0   10 -509.73871 -130.04419  74.5%     -    0s
+     0     0 -130.12202    0   10 -509.73871 -130.12202  74.5%     -    0s
+     0     0 -130.12294    0   10 -509.73871 -130.12294  74.5%     -    0s
+     0     0 -140.89775    0    9 -509.73871 -140.89775  72.4%     -    0s
+     0     0 -141.40873    0    9 -509.73871 -141.40873  72.3%     -    0s
+     0     0 -141.64525    0    9 -509.73871 -141.64525  72.2%     -    0s
+     0     0 -141.79573    0   10 -509.73871 -141.79573  72.2%     -    0s
+     0     0 -147.40893    0   12 -509.73871 -147.40893  71.1%     -    0s
+     0     0 -149.17478    0   10 -509.73871 -149.17478  70.7%     -    0s
+     0     0 -149.67377    0   11 -509.73871 -149.67377  70.6%     -    0s
+     0     0 -149.74695    0   11 -509.73871 -149.74695  70.6%     -    0s
+     0     0 -149.74776    0   11 -509.73871 -149.74776  70.6%     -    0s
+     0     0 -150.28478    0   10 -509.73871 -150.28478  70.5%     -    0s
+     0     0 -150.48004    0   10 -509.73871 -150.48004  70.5%     -    0s
+     0     0 -150.59933    0   10 -509.73871 -150.59933  70.5%     -    0s
+     0     0 -150.61573    0   10 -509.73871 -150.61573  70.5%     -    0s
+     0     0 -150.75726    0   10 -509.73871 -150.75726  70.4%     -    0s
+     0     0 -150.81166    0   10 -509.73871 -150.81166  70.4%     -    0s
+     0     0 -150.81599    0   10 -509.73871 -150.81599  70.4%     -    0s
+     0     0 -151.28821    0   11 -509.73871 -151.28821  70.3%     -    0s
+     0     0 -151.29981    0   12 -509.73871 -151.29981  70.3%     -    0s
+     0     0 -151.57329    0   12 -509.73871 -151.57329  70.3%     -    0s
+     0     0 -151.61078    0   12 -509.73871 -151.61078  70.3%     -    0s
+     0     0 -151.61618    0   12 -509.73871 -151.61618  70.3%     -    0s
+     0     0 -151.79289    0   12 -509.73871 -151.79289  70.2%     -    0s
+     0     0 -151.79289    0   12 -509.73871 -151.79289  70.2%     -    0s
+H    0     0                    -503.5853779 -151.79289  69.9%     -    0s
+     0     2 -151.93459    0   12 -503.58538 -151.93459  69.8%     -    0s
+H   55    28                    -503.4560923 -164.18085  67.4%  58.9    0s
+
+Cutting planes:
+  Gomory: 9
+  Implied bound: 38
+  MIR: 78
+  Flow cover: 56
+  RLT: 15
+  BQP: 4
+
+Explored 103 nodes (10852 simplex iterations) in 0.77 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 5: -503.456 -503.585 -509.739 ... -5377.56
+No other solutions better than -503.456
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -5.034560923064e+02, best bound -5.034560923064e+02, gap 0.0000%
+solution G:
+{0: 0.0078125}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.11127326835868939, 3: 0.0625, 4: 0.031249999999999927, 5: 0.01513671875, 6: 0.015625, 7: 0.00048828125}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 9
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1007 columns and 2223 nonzeros
+Model fingerprint: 0x6d5fd28a
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 20 rows and 160 columns
+Presolve time: 0.00s
+Presolved: 105 rows, 847 columns, 1913 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -1.2282991e+01   5.700532e+01   0.000000e+00      0s
+     258   -5.0316727e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 258 iterations and 0.00 seconds
+Optimal objective -5.031672689e+02
+solution G:
+{}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.1008322209625512, 3: 0.0625, 4: 0.03125, 5: 0.01513671875, 6: 0.015625, 7: 0.00048828125, 8: 0.0, 9: 0.0, 10: 0.0, 11: 0.01171875, 12: 0.0, 13: 0.0, 14: 0.00390625}
+**************************************************
+iteration 9
+{0: 0.5, 1: 0.125, 2: 0.1008322209625512, 3: 0.0625, 4: 0.03125, 5: 0.01513671875, 6: 0.015625, 7: 0.00048828125, 8: 0.0, 9: 0.0, 10: 0.0, 11: 0.01171875, 12: 0.0, 13: 0.0, 14: 0.00390625}
+[11, 8, 2, 7, 6, 100, 1, 0, 192, 48, 240, 9, 201, 57, 249]
+**************************************************
+**************************************************
+number of chosen paths = 9
+[0, 1, 2, 3, 4, 5, 6, 11, 7]
+[11, 8, 2, 7, 6, 100, 1, 9, 0]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 10
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1094 columns and 3565 nonzeros
+Model fingerprint: 0x4d219f10
+Variable types: 1079 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -2809.722557
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1093 columns, 5949 nonzeros
+Variable types: 1078 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.748765e+01, 290 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -87.48765    0   12 -2809.7226  -87.48765  96.9%     -    0s
+     0     0 -109.00760    0   12 -2809.7226 -109.00760  96.1%     -    0s
+H    0     0                    -506.6069044 -109.00760  78.5%     -    0s
+     0     0 -109.00807    0   12 -506.60690 -109.00807  78.5%     -    0s
+     0     0 -116.57913    0   11 -506.60690 -116.57913  77.0%     -    0s
+     0     0 -116.98138    0   11 -506.60690 -116.98138  76.9%     -    0s
+     0     0 -117.38798    0   12 -506.60690 -117.38798  76.8%     -    0s
+     0     0 -126.84486    0    8 -506.60690 -126.84486  75.0%     -    0s
+     0     0 -128.99257    0    9 -506.60690 -128.99257  74.5%     -    0s
+     0     0 -129.01544    0    9 -506.60690 -129.01544  74.5%     -    0s
+     0     0 -134.31197    0   11 -506.60690 -134.31197  73.5%     -    0s
+H    0     0                    -502.9942237 -134.31197  73.3%     -    0s
+     0     0 -134.65441    0   11 -502.99422 -134.65441  73.2%     -    0s
+     0     0 -134.66113    0   11 -502.99422 -134.66113  73.2%     -    0s
+     0     0 -135.28773    0   10 -502.99422 -135.28773  73.1%     -    0s
+     0     0 -135.48405    0   11 -502.99422 -135.48405  73.1%     -    0s
+     0     0 -137.37185    0   10 -502.99422 -137.37185  72.7%     -    0s
+     0     0 -138.57886    0    9 -502.99422 -138.57886  72.4%     -    0s
+     0     0 -138.77142    0   10 -502.99422 -138.77142  72.4%     -    0s
+     0     0 -138.78774    0   10 -502.99422 -138.78774  72.4%     -    0s
+     0     0 -141.64020    0   10 -502.99422 -141.64020  71.8%     -    0s
+     0     0 -141.69604    0   10 -502.99422 -141.69604  71.8%     -    0s
+     0     0 -141.69625    0   10 -502.99422 -141.69625  71.8%     -    0s
+     0     0 -142.77342    0   10 -502.99422 -142.77342  71.6%     -    0s
+     0     0 -142.83255    0   10 -502.99422 -142.83255  71.6%     -    0s
+     0     0 -142.83680    0   10 -502.99422 -142.83680  71.6%     -    0s
+     0     0 -142.85629    0   10 -502.99422 -142.85629  71.6%     -    0s
+     0     0 -143.05600    0   10 -502.99422 -143.05600  71.6%     -    0s
+     0     0 -143.14047    0   10 -502.99422 -143.14047  71.5%     -    0s
+     0     0 -143.14188    0   10 -502.99422 -143.14188  71.5%     -    0s
+     0     0 -143.19216    0   10 -502.99422 -143.19216  71.5%     -    0s
+     0     0 -143.19216    0   10 -502.99422 -143.19216  71.5%     -    0s
+     0     2 -143.22134    0   10 -502.99422 -143.22134  71.5%     -    0s
+*   57    25              12    -497.5567888 -161.09203  67.6%  65.9    0s
+*   85     6              14    -497.1984598 -179.54969  63.9%   102    0s
+
+Cutting planes:
+  Gomory: 5
+  Implied bound: 39
+  MIR: 79
+  Flow cover: 48
+  RLT: 15
+  Relax-and-lift: 1
+
+Explored 92 nodes (11001 simplex iterations) in 0.83 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 5: -497.198 -497.557 -502.994 ... -2809.72
+No other solutions better than -497.198
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.971984598333e+02, best bound -4.971984598333e+02, gap 0.0000%
+solution G:
+{0: 0.007812499999999996}
+solution C:
+{0: 0.5, 1: 0.12500000000000008, 2: 0.10270648954066683, 3: 0.0625, 4: 0.03125000000000014, 5: 0.007324218750000007, 6: 0.015625, 7: 0.015625000000000003, 8: 0.0004882812499999974}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 10
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1016 columns and 2433 nonzeros
+Model fingerprint: 0xcedaff16
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 16 rows and 128 columns
+Presolve time: 0.00s
+Presolved: 109 rows, 888 columns, 2185 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -4.4606650e+00   5.892061e+01   0.000000e+00      0s
+     280   -4.9707191e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 280 iterations and 0.00 seconds
+Optimal objective -4.970719128e+02
+solution G:
+{}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.10239206384398772, 3: 0.0625, 4: 0.03125, 5: 0.00732421875, 6: 0.015625, 7: 0.015625, 8: 0.00042724609375, 9: 0.0, 10: 6.103515625e-05, 11: 0.0, 12: 0.0, 13: 0.0, 14: 0.0, 15: 0.0, 16: 0.0, 17: 0.0, 18: 0.0, 19: 0.00390625, 20: 0.0, 21: 0.0, 22: 0.00390625, 23: 0.0}
+**************************************************
+iteration 10
+{0: 0.5, 1: 0.125, 2: 0.10239206384398772, 3: 0.0625, 4: 0.03125, 5: 0.00732421875, 6: 0.015625, 7: 0.015625, 8: 0.00042724609375, 9: 0.0, 10: 6.103515625e-05, 11: 0.0, 12: 0.0, 13: 0.0, 14: 0.0, 15: 0.0, 16: 0.0, 17: 0.0, 18: 0.0, 19: 0.00390625, 20: 0.0, 21: 0.0, 22: 0.00390625, 23: 0.0}
+[11, 8, 2, 7, 6, 100, 1, 9, 0, 192, 96, 288, 48, 240, 144, 336, 5, 197, 101, 293, 53, 245, 149, 341]
+**************************************************
+**************************************************
+number of chosen paths = 10
+[0, 1, 2, 3, 4, 7, 6, 5, 8, 22]
+[11, 8, 2, 7, 6, 9, 1, 100, 0, 149]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 11
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1095 columns and 3583 nonzeros
+Model fingerprint: 0xbe228e02
+Variable types: 1080 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -3058.305684
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1094 columns, 5967 nonzeros
+Variable types: 1079 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.748765e+01, 302 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -87.48765    0   12 -3058.3057  -87.48765  97.1%     -    0s
+H    0     0                    -498.8163060  -87.48765  82.5%     -    0s
+     0     0 -107.56805    0   12 -498.81631 -107.56805  78.4%     -    0s
+H    0     0                    -497.9872317 -107.56805  78.4%     -    0s
+     0     0 -107.58358    0   12 -497.98723 -107.58358  78.4%     -    0s
+     0     0 -120.36613    0   12 -497.98723 -120.36613  75.8%     -    0s
+     0     0 -123.57361    0   10 -497.98723 -123.57361  75.2%     -    0s
+     0     0 -124.24216    0   10 -497.98723 -124.24216  75.1%     -    0s
+     0     0 -124.33518    0   10 -497.98723 -124.33518  75.0%     -    0s
+     0     0 -124.34150    0   10 -497.98723 -124.34150  75.0%     -    0s
+     0     0 -132.56069    0   10 -497.98723 -132.56069  73.4%     -    0s
+H    0     0                    -497.8035725 -132.56069  73.4%     -    0s
+     0     0 -134.62487    0    9 -497.80357 -134.62487  73.0%     -    0s
+     0     0 -134.73658    0    9 -497.80357 -134.73658  72.9%     -    0s
+     0     0 -134.73736    0    9 -497.80357 -134.73736  72.9%     -    0s
+     0     0 -135.10200    0    9 -497.80357 -135.10200  72.9%     -    0s
+     0     0 -135.19224    0    8 -497.80357 -135.19224  72.8%     -    0s
+     0     0 -135.20760    0    8 -497.80357 -135.20760  72.8%     -    0s
+     0     0 -135.25968    0   10 -497.80357 -135.25968  72.8%     -    0s
+     0     0 -135.27502    0    9 -497.80357 -135.27502  72.8%     -    0s
+     0     0 -142.51082    0    9 -497.80357 -142.51082  71.4%     -    0s
+     0     0 -142.55332    0    9 -497.80357 -142.55332  71.4%     -    0s
+     0     0 -142.55689    0    9 -497.80357 -142.55689  71.4%     -    0s
+     0     0 -143.39368    0    9 -497.80357 -143.39368  71.2%     -    0s
+H    0     0                    -497.2753727 -143.39368  71.2%     -    0s
+     0     0 -143.50304    0    9 -497.27537 -143.50304  71.1%     -    0s
+     0     0 -143.61515    0   10 -497.27537 -143.61515  71.1%     -    0s
+     0     0 -143.62324    0   10 -497.27537 -143.62324  71.1%     -    0s
+     0     0 -143.82859    0    9 -497.27537 -143.82859  71.1%     -    0s
+     0     0 -143.82919    0    8 -497.27537 -143.82919  71.1%     -    0s
+     0     0 -143.89023    0   10 -497.27537 -143.89023  71.1%     -    0s
+     0     0 -143.89023    0   10 -497.27537 -143.89023  71.1%     -    0s
+     0     2 -143.89767    0   10 -497.27537 -143.89767  71.1%     -    0s
+*   22    12               8    -497.1336262 -148.85857  70.1%  54.7    0s
+*   25    11               8    -497.0370877 -148.85857  70.1%  48.4    0s
+H   62     4                    -496.3439989 -157.60762  68.2%  62.1    0s
+*   65     4              12    -496.3131689 -157.60762  68.2%  61.0    0s
+*   68     5              12    -496.1488323 -157.60762  68.2%  59.6    0s
+*   69     4              12    -496.0687456 -157.60762  68.2%  58.8    0s
+*   91     1              13    -495.9910714 -183.35220  63.0%  61.2    0s
+
+Cutting planes:
+  Gomory: 8
+  Implied bound: 50
+  MIR: 68
+  Flow cover: 31
+  RLT: 13
+
+Explored 95 nodes (7076 simplex iterations) in 0.66 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 10: -495.991 -496.069 -496.149 ... -497.987
+No other solutions better than -495.991
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.959910713562e+02, best bound -4.959910713562e+02, gap 0.0000%
+solution G:
+{0: 0.00146484375}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.10189592552296678, 3: 0.0625, 4: 0.0312499999999999, 5: 0.015625, 6: 0.015625, 7: 0.005859375, 8: 0.00048828125, 9: 0.0078125}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 11
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1009 columns and 2287 nonzeros
+Model fingerprint: 0x7419a91f
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 18 rows and 144 columns
+Presolve time: 0.00s
+Presolved: 107 rows, 865 columns, 2008 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -3.7260364e+00   5.695806e+01   0.000000e+00      0s
+     237   -4.9598945e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 237 iterations and 0.00 seconds
+Optimal objective -4.959894469e+02
+solution G:
+{}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.10189692551382387, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.005859375, 8: 0.00042724609375, 9: 0.0078125, 10: 0.0, 11: 6.103515625e-05, 12: 0.0, 13: 0.0, 14: 0.0, 15: 0.0, 16: 0.00146484375}
+**************************************************
+iteration 11
+{0: 0.5, 1: 0.125, 2: 0.10189692551382387, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.005859375, 8: 0.00042724609375, 9: 0.0078125, 10: 0.0, 11: 6.103515625e-05, 12: 0.0, 13: 0.0, 14: 0.0, 15: 0.0, 16: 0.00146484375}
+[11, 8, 2, 7, 6, 9, 1, 100, 0, 149, 192, 96, 288, 3, 195, 99, 291]
+**************************************************
+**************************************************
+number of chosen paths = 11
+[0, 1, 2, 3, 4, 5, 6, 9, 7, 8, 16]
+[11, 8, 2, 7, 6, 9, 1, 149, 100, 0, 291]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 12
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1096 columns and 3608 nonzeros
+Model fingerprint: 0xd4ddb040
+Variable types: 1081 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -2809.722557
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1095 columns, 5992 nonzeros
+Variable types: 1080 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.748765e+01, 327 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -87.48765    0   12 -2809.7226  -87.48765  96.9%     -    0s
+     0     0 -101.11408    0   13 -2809.7226 -101.11408  96.4%     -    0s
+H    0     0                    -495.9910714 -101.11408  79.6%     -    0s
+H    0     0                    -495.6977498 -101.11408  79.6%     -    0s
+     0     0 -101.14179    0   13 -495.69775 -101.14179  79.6%     -    0s
+     0     0 -109.65635    0   13 -495.69775 -109.65635  77.9%     -    0s
+     0     0 -110.39095    0   12 -495.69775 -110.39095  77.7%     -    0s
+     0     0 -110.42991    0   13 -495.69775 -110.42991  77.7%     -    0s
+     0     0 -126.46131    0   10 -495.69775 -126.46131  74.5%     -    0s
+     0     0 -127.06070    0   11 -495.69775 -127.06070  74.4%     -    0s
+     0     0 -127.07698    0   11 -495.69775 -127.07698  74.4%     -    0s
+     0     0 -128.49184    0   10 -495.69775 -128.49184  74.1%     -    0s
+     0     0 -128.82175    0   10 -495.69775 -128.82175  74.0%     -    0s
+     0     0 -129.20031    0   10 -495.69775 -129.20031  73.9%     -    0s
+     0     0 -129.39400    0   11 -495.69775 -129.39400  73.9%     -    0s
+     0     0 -129.51005    0   10 -495.69775 -129.51005  73.9%     -    0s
+     0     0 -129.59524    0   11 -495.69775 -129.59524  73.9%     -    0s
+     0     0 -129.61262    0   11 -495.69775 -129.61262  73.9%     -    0s
+     0     0 -130.15189    0   12 -495.69775 -130.15189  73.7%     -    0s
+     0     0 -130.35172    0   12 -495.69775 -130.35172  73.7%     -    0s
+     0     0 -130.35329    0   13 -495.69775 -130.35329  73.7%     -    0s
+     0     0 -130.83433    0   12 -495.69775 -130.83433  73.6%     -    0s
+     0     0 -130.86829    0   12 -495.69775 -130.86829  73.6%     -    0s
+     0     0 -130.88352    0   13 -495.69775 -130.88352  73.6%     -    0s
+     0     0 -130.89398    0   13 -495.69775 -130.89398  73.6%     -    0s
+     0     0 -130.90685    0   13 -495.69775 -130.90685  73.6%     -    0s
+     0     0 -131.05095    0   13 -495.69775 -131.05095  73.6%     -    0s
+     0     0 -131.05095    0   13 -495.69775 -131.05095  73.6%     -    0s
+     0     2 -131.05431    0   13 -495.69775 -131.05431  73.6%     -    0s
+*  123    11              13    -495.0110488 -154.36951  68.8%  60.0    0s
+*  130    10              11    -494.8194646 -155.14960  68.6%  62.8    0s
+
+Cutting planes:
+  Gomory: 8
+  Implied bound: 27
+  MIR: 61
+  Flow cover: 40
+  RLT: 17
+
+Explored 167 nodes (12203 simplex iterations) in 0.85 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 5: -494.819 -495.011 -495.698 ... -2809.72
+No other solutions better than -494.819
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.948194645936e+02, best bound -4.948194645936e+02, gap 0.0000%
+solution G:
+{0: 0.0024414062500000004}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.09957737529256878, 3: 0.06250000000000003, 4: 0.03125000000000001, 5: 0.015625, 6: 0.015624999999999997, 7: 0.0078125, 8: 0.005859375, 9: 0.00048828125, 10: 0.00146484375}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 12
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1006 columns and 2174 nonzeros
+Model fingerprint: 0xc282adaa
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 16 rows and 128 columns
+Presolve time: 0.00s
+Presolved: 109 rows, 878 columns, 1926 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -1.6220600e+00   5.944727e+01   0.000000e+00      0s
+     259   -4.9481946e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 259 iterations and 0.00 seconds
+Optimal objective -4.948194646e+02
+solution G:
+{}
+solution C:
+{0: 0.5, 1: 0.125, 2: 0.09957737529256876, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.00048828125, 10: 0.00146484375, 11: 0.0, 12: 0.0, 13: 0.00244140625}
+**************************************************
+iteration 12
+{0: 0.5, 1: 0.125, 2: 0.09957737529256876, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.00048828125, 10: 0.00146484375, 11: 0.0, 12: 0.0, 13: 0.00244140625}
+[11, 8, 2, 7, 6, 9, 1, 149, 100, 0, 291, 192, 10, 202]
+**************************************************
+**************************************************
+number of chosen paths = 12
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 13]
+[11, 8, 2, 7, 6, 9, 1, 149, 100, 0, 291, 202]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 13
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1097 columns and 3621 nonzeros
+Model fingerprint: 0x423661aa
+Variable types: 1082 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -3058.305684
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1096 columns, 6005 nonzeros
+Variable types: 1081 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.748765e+01, 300 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -87.48765    0   12 -3058.3057  -87.48765  97.1%     -    0s
+H    0     0                    -494.8194646  -87.48765  82.3%     -    0s
+     0     0 -103.24490    0   13 -494.81946 -103.24490  79.1%     -    0s
+H    0     0                    -494.7919766 -103.24490  79.1%     -    0s
+     0     0 -103.25851    0   13 -494.79198 -103.25851  79.1%     -    0s
+     0     0 -108.52125    0   12 -494.79198 -108.52125  78.1%     -    0s
+     0     0 -108.94795    0   11 -494.79198 -108.94795  78.0%     -    0s
+     0     0 -109.04381    0   12 -494.79198 -109.04381  78.0%     -    0s
+     0     0 -109.04393    0   12 -494.79198 -109.04393  78.0%     -    0s
+     0     0 -125.32907    0    7 -494.79198 -125.32907  74.7%     -    0s
+     0     0 -125.68886    0    9 -494.79198 -125.68886  74.6%     -    0s
+     0     0 -125.73730    0   10 -494.79198 -125.73730  74.6%     -    0s
+     0     0 -125.73853    0   10 -494.79198 -125.73853  74.6%     -    0s
+     0     0 -126.10616    0    9 -494.79198 -126.10616  74.5%     -    0s
+     0     0 -126.16631    0   10 -494.79198 -126.16631  74.5%     -    0s
+     0     0 -126.18483    0   10 -494.79198 -126.18483  74.5%     -    0s
+     0     0 -134.01293    0   10 -494.79198 -134.01293  72.9%     -    0s
+     0     0 -134.29062    0   10 -494.79198 -134.29062  72.9%     -    0s
+     0     0 -134.74922    0   10 -494.79198 -134.74922  72.8%     -    0s
+     0     0 -134.74970    0   10 -494.79198 -134.74970  72.8%     -    0s
+     0     0 -136.07420    0   11 -494.79198 -136.07420  72.5%     -    0s
+     0     0 -136.08910    0   12 -494.79198 -136.08910  72.5%     -    0s
+     0     0 -136.69889    0   11 -494.79198 -136.69889  72.4%     -    0s
+     0     0 -136.81361    0   13 -494.79198 -136.81361  72.3%     -    0s
+     0     0 -136.88979    0   11 -494.79198 -136.88979  72.3%     -    0s
+     0     0 -136.89034    0   11 -494.79198 -136.89034  72.3%     -    0s
+     0     0 -137.18866    0   10 -494.79198 -137.18866  72.3%     -    0s
+     0     0 -137.24246    0   12 -494.79198 -137.24246  72.3%     -    0s
+     0     0 -137.27673    0    9 -494.79198 -137.27673  72.3%     -    0s
+     0     0 -137.28127    0   10 -494.79198 -137.28127  72.3%     -    0s
+     0     0 -137.54606    0   10 -494.79198 -137.54606  72.2%     -    0s
+     0     0 -137.72073    0   10 -494.79198 -137.72073  72.2%     -    0s
+     0     0 -137.72515    0   10 -494.79198 -137.72515  72.2%     -    0s
+     0     0 -137.86323    0   10 -494.79198 -137.86323  72.1%     -    0s
+     0     0 -137.89392    0   10 -494.79198 -137.89392  72.1%     -    0s
+     0     0 -137.91148    0   10 -494.79198 -137.91148  72.1%     -    0s
+     0     0 -137.99560    0   11 -494.79198 -137.99560  72.1%     -    0s
+     0     0 -137.99560    0   11 -494.79198 -137.99560  72.1%     -    0s
+     0     2 -137.99638    0   11 -494.79198 -137.99638  72.1%     -    0s
+*   22    20              15    -494.5931058 -144.50580  70.8%  84.5    0s
+*   29    19               4    -494.5890679 -144.95969  70.7%  81.9    0s
+*   30    18               4    -494.5802969 -144.95969  70.7%  80.2    0s
+*  122    15              13    -494.5610967 -177.46052  64.1%  81.1    0s
+
+Cutting planes:
+  Gomory: 7
+  Implied bound: 37
+  MIR: 108
+  Flow cover: 58
+  RLT: 16
+
+Explored 166 nodes (14713 simplex iterations) in 0.99 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 7: -494.561 -494.58 -494.589 ... -3058.31
+No other solutions better than -494.561
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.945610967386e+02, best bound -4.945610967386e+02, gap 0.0000%
+solution G:
+{0: 0.0004882812500000079}
+solution C:
+{0: 0.49951171875, 1: 0.125, 2: 0.10008851347644823, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015624999999999997, 7: 0.0078125, 8: 0.005859375, 9: 0.00048828125, 10: 0.00146484375, 11: 0.0019531249999999922}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 13
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1018 columns and 2392 nonzeros
+Model fingerprint: 0x6bedb40f
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 8 rows and 64 columns
+Presolve time: 0.00s
+Presolved: 117 rows, 954 columns, 2268 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -8.8155436e-01   6.287170e+01   0.000000e+00      0s
+     286   -4.9456110e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 286 iterations and 0.00 seconds
+Optimal objective -4.945610967e+02
+solution G:
+{}
+solution C:
+{0: 0.4990234375, 1: 0.125, 2: 0.10008851347644822, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.00048828125, 10: 0.00146484375, 11: 0.001953125, 12: 0.0, 13: 0.0, 14: 0.0, 15: 0.0, 16: 0.0, 17: 0.0, 18: 0.0, 19: 0.0, 20: 0.00048828125, 21: 0.0, 22: 0.0, 23: 0.00048828125, 24: 0.0, 25: 0.0}
+**************************************************
+iteration 13
+{0: 0.4990234375, 1: 0.125, 2: 0.10008851347644822, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.00048828125, 10: 0.00146484375, 11: 0.001953125, 12: 0.0, 13: 0.0, 14: 0.0, 15: 0.0, 16: 0.0, 17: 0.0, 18: 0.0, 19: 0.0, 20: 0.00048828125, 21: 0.0, 22: 0.0, 23: 0.00048828125, 24: 0.0, 25: 0.0}
+[11, 8, 2, 7, 6, 9, 1, 149, 100, 0, 291, 202, 192, 96, 288, 48, 240, 144, 336, 203, 107, 299, 59, 251, 155, 347]
+**************************************************
+**************************************************
+number of chosen paths = 13
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 20]
+[11, 8, 2, 7, 6, 9, 1, 149, 100, 0, 291, 202, 107]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 14
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1098 columns and 3630 nonzeros
+Model fingerprint: 0xf5492920
+Variable types: 1083 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -3087.203013
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1097 columns, 6014 nonzeros
+Variable types: 1082 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.748765e+01, 316 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -87.48765    0   12 -3087.2030  -87.48765  97.2%     -    0s
+     0     0 -105.64915    0   12 -3087.2030 -105.64915  96.6%     -    0s
+H    0     0                    -494.8002644 -105.64915  78.6%     -    0s
+H    0     0                    -494.7762922 -105.64915  78.6%     -    0s
+     0     0 -105.64931    0   12 -494.77629 -105.64931  78.6%     -    0s
+     0     0 -118.95708    0   11 -494.77629 -118.95708  76.0%     -    0s
+     0     0 -119.44108    0   11 -494.77629 -119.44108  75.9%     -    0s
+     0     0 -119.56071    0   11 -494.77629 -119.56071  75.8%     -    0s
+     0     0 -133.74458    0   10 -494.77629 -133.74458  73.0%     -    0s
+     0     0 -133.84795    0   10 -494.77629 -133.84795  72.9%     -    0s
+     0     0 -133.85014    0   10 -494.77629 -133.85014  72.9%     -    0s
+     0     0 -134.59359    0   11 -494.77629 -134.59359  72.8%     -    0s
+     0     0 -134.61958    0   11 -494.77629 -134.61958  72.8%     -    0s
+     0     0 -134.62378    0   11 -494.77629 -134.62378  72.8%     -    0s
+     0     0 -136.93781    0    8 -494.77629 -136.93781  72.3%     -    0s
+     0     0 -136.98241    0    8 -494.77629 -136.98241  72.3%     -    0s
+     0     0 -137.19363    0    8 -494.77629 -137.19363  72.3%     -    0s
+     0     0 -137.25721    0    8 -494.77629 -137.25721  72.3%     -    0s
+     0     0 -137.25851    0    8 -494.77629 -137.25851  72.3%     -    0s
+     0     0 -137.66679    0    9 -494.77629 -137.66679  72.2%     -    0s
+     0     0 -137.70561    0    9 -494.77629 -137.70561  72.2%     -    0s
+     0     0 -137.70676    0    9 -494.77629 -137.70676  72.2%     -    0s
+     0     0 -138.10114    0   10 -494.77629 -138.10114  72.1%     -    0s
+H    0     0                    -494.5698677 -138.10114  72.1%     -    0s
+     0     0 -138.16292    0   11 -494.56987 -138.16292  72.1%     -    0s
+     0     0 -138.17014    0   11 -494.56987 -138.17014  72.1%     -    0s
+     0     0 -138.20099    0   10 -494.56987 -138.20099  72.1%     -    0s
+     0     0 -138.20099    0   10 -494.56987 -138.20099  72.1%     -    0s
+     0     2 -138.22515    0   10 -494.56987 -138.22515  72.1%     -    0s
+*   47    10               3    -494.5610967 -156.19629  68.4%  77.1    0s
+
+Cutting planes:
+  Gomory: 8
+  Implied bound: 30
+  MIR: 46
+  Flow cover: 38
+  RLT: 15
+  Relax-and-lift: 2
+
+Explored 78 nodes (7007 simplex iterations) in 0.67 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 5: -494.561 -494.57 -494.776 ... -3087.2
+No other solutions better than -494.561
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.945610967386e+02, best bound -4.945610967386e+02, gap 0.0000%
+solution G:
+{0: 0.00048828125}
+solution C:
+{0: 0.49951171875, 1: 0.125, 2: 0.10008851347644822, 3: 0.0625, 4: 0.03124999999999997, 5: 0.015625, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.00048828125, 10: 0.00146484375, 11: 0.001953125, 12: 0.0}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 14
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1018 columns and 2392 nonzeros
+Model fingerprint: 0xaa27604d
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 8 rows and 64 columns
+Presolve time: 0.00s
+Presolved: 117 rows, 954 columns, 2268 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -8.8155436e-01   6.287170e+01   0.000000e+00      0s
+     286   -4.9456110e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 286 iterations and 0.00 seconds
+Optimal objective -4.945610967e+02
+solution G:
+{}
+solution C:
+{0: 0.4990234375, 1: 0.125, 2: 0.10008851347644822, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.00048828125, 10: 0.00146484375, 11: 0.001953125, 12: 0.00048828125, 13: 0.0, 14: 0.0, 15: 0.0, 16: 0.0, 17: 0.0, 18: 0.0, 19: 0.0, 20: 0.0, 21: 0.0, 22: 0.0, 23: 0.00048828125, 24: 0.0, 25: 0.0}
+**************************************************
+iteration 14
+{0: 0.4990234375, 1: 0.125, 2: 0.10008851347644822, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.00048828125, 10: 0.00146484375, 11: 0.001953125, 12: 0.00048828125, 13: 0.0, 14: 0.0, 15: 0.0, 16: 0.0, 17: 0.0, 18: 0.0, 19: 0.0, 20: 0.0, 21: 0.0, 22: 0.0, 23: 0.00048828125, 24: 0.0, 25: 0.0}
+[11, 8, 2, 7, 6, 9, 1, 149, 100, 0, 291, 202, 107, 192, 96, 288, 48, 240, 144, 336, 203, 299, 59, 251, 155, 347]
+**************************************************
+**************************************************
+number of chosen paths = 14
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 23]
+[11, 8, 2, 7, 6, 9, 1, 149, 100, 0, 291, 202, 107, 251]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 15
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1099 columns and 3638 nonzeros
+Model fingerprint: 0x4ecc3caf
+Variable types: 1084 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -3058.305684
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1098 columns, 6022 nonzeros
+Variable types: 1083 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.748765e+01, 328 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -87.48765    0   12 -3058.3057  -87.48765  97.1%     -    0s
+     0     0 -101.52048    0   12 -3058.3057 -101.52048  96.7%     -    0s
+H    0     0                    -494.5610967 -101.52048  79.5%     -    0s
+     0     0 -101.55377    0   13 -494.56110 -101.55377  79.5%     -    0s
+     0     0 -113.61021    0   12 -494.56110 -113.61021  77.0%     -    0s
+     0     0 -113.74493    0   12 -494.56110 -113.74493  77.0%     -    0s
+     0     0 -116.06908    0   11 -494.56110 -116.06908  76.5%     -    0s
+     0     0 -116.08090    0   11 -494.56110 -116.08090  76.5%     -    0s
+     0     0 -127.22138    0   11 -494.56110 -127.22138  74.3%     -    0s
+     0     0 -127.67552    0   12 -494.56110 -127.67552  74.2%     -    0s
+     0     0 -127.85134    0   12 -494.56110 -127.85134  74.1%     -    0s
+     0     0 -128.20285    0   11 -494.56110 -128.20285  74.1%     -    0s
+     0     0 -128.20297    0   11 -494.56110 -128.20297  74.1%     -    0s
+     0     0 -130.84523    0   10 -494.56110 -130.84523  73.5%     -    0s
+     0     0 -131.37801    0   11 -494.56110 -131.37801  73.4%     -    0s
+     0     0 -131.39040    0   11 -494.56110 -131.39040  73.4%     -    0s
+     0     0 -132.75831    0   12 -494.56110 -132.75831  73.2%     -    0s
+     0     0 -132.76119    0   12 -494.56110 -132.76119  73.2%     -    0s
+     0     0 -133.04903    0   12 -494.56110 -133.04903  73.1%     -    0s
+     0     0 -133.10772    0   12 -494.56110 -133.10772  73.1%     -    0s
+     0     0 -133.10946    0   12 -494.56110 -133.10946  73.1%     -    0s
+     0     0 -133.58339    0   13 -494.56110 -133.58339  73.0%     -    0s
+     0     0 -133.60446    0   13 -494.56110 -133.60446  73.0%     -    0s
+     0     0 -133.89675    0   13 -494.56110 -133.89675  72.9%     -    0s
+     0     0 -133.96072    0   13 -494.56110 -133.96072  72.9%     -    0s
+     0     0 -133.99852    0   13 -494.56110 -133.99852  72.9%     -    0s
+     0     0 -134.00086    0   13 -494.56110 -134.00086  72.9%     -    0s
+     0     0 -134.39471    0   12 -494.56110 -134.39471  72.8%     -    0s
+     0     0 -134.39475    0   12 -494.56110 -134.39475  72.8%     -    0s
+     0     0 -135.12829    0   11 -494.56110 -135.12829  72.7%     -    0s
+     0     0 -136.28704    0    9 -494.56110 -136.28704  72.4%     -    0s
+     0     0 -136.38975    0   13 -494.56110 -136.38975  72.4%     -    0s
+     0     0 -136.39511    0   12 -494.56110 -136.39511  72.4%     -    0s
+     0     0 -136.95956    0   12 -494.56110 -136.95956  72.3%     -    0s
+     0     0 -137.43471    0   13 -494.56110 -137.43471  72.2%     -    0s
+     0     0 -137.46841    0   12 -494.56110 -137.46841  72.2%     -    0s
+     0     0 -137.58592    0   12 -494.56110 -137.58592  72.2%     -    0s
+     0     0 -137.63629    0   12 -494.56110 -137.63629  72.2%     -    0s
+     0     0 -137.63697    0   13 -494.56110 -137.63697  72.2%     -    0s
+     0     0 -137.87275    0   12 -494.56110 -137.87275  72.1%     -    0s
+     0     0 -137.90064    0   13 -494.56110 -137.90064  72.1%     -    0s
+     0     0 -137.90068    0   13 -494.56110 -137.90068  72.1%     -    0s
+     0     0 -138.15394    0   11 -494.56110 -138.15394  72.1%     -    0s
+     0     0 -138.15394    0   11 -494.56110 -138.15394  72.1%     -    0s
+     0     2 -138.18137    0   11 -494.56110 -138.18137  72.1%     -    0s
+*   20    18              15    -494.3390294 -142.57740  71.2%  81.3    0s
+
+Cutting planes:
+  Gomory: 8
+  Implied bound: 29
+  MIR: 78
+  Flow cover: 57
+  RLT: 12
+
+Explored 186 nodes (12504 simplex iterations) in 0.97 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 3: -494.339 -494.561 -3058.31 
+No other solutions better than -494.339
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.943390294306e+02, best bound -4.943390294306e+02, gap 0.0000%
+solution G:
+{0: 0.00024414062499999986}
+solution C:
+{0: 0.4990234375, 1: 0.125, 2: 0.10009379914240779, 3: 0.0625, 4: 0.03125, 5: 0.015625000000000007, 6: 0.015625, 7: 0.0078125, 8: 0.005859375000000007, 9: 0.0002441406250000001, 10: 0.001464843749999993, 11: 0.001953125000000021, 12: 0.00048828125, 13: 0.00048828125}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 15
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1007 columns and 2178 nonzeros
+Model fingerprint: 0xb465b111
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 14 rows and 112 columns
+Presolve time: 0.00s
+Presolved: 111 rows, 895 columns, 1961 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -4.7603935e-01   5.998723e+01   0.000000e+00      0s
+     253   -4.9433903e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 253 iterations and 0.00 seconds
+Optimal objective -4.943390294e+02
+solution G:
+{}
+solution C:
+{0: 0.4990234375, 1: 0.125, 2: 0.10009379914240785, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.000244140625, 10: 0.00146484375, 11: 0.001953125, 12: 0.00048828125, 13: 0.00048828125, 14: 0.000244140625}
+**************************************************
+iteration 15
+{0: 0.4990234375, 1: 0.125, 2: 0.10009379914240785, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.000244140625, 10: 0.00146484375, 11: 0.001953125, 12: 0.00048828125, 13: 0.00048828125, 14: 0.000244140625}
+[11, 8, 2, 7, 6, 9, 1, 149, 100, 0, 291, 202, 107, 251, 24]
+**************************************************
+**************************************************
+number of chosen paths = 15
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 14, 10, 11, 12, 13]
+[11, 8, 2, 7, 6, 9, 1, 149, 100, 0, 24, 291, 202, 107, 251]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 16
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1100 columns and 3670 nonzeros
+Model fingerprint: 0x56df493e
+Variable types: 1085 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -9882.423299
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1099 columns, 6054 nonzeros
+Variable types: 1084 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.732174e+01, 269 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -87.32174    0   11 -9882.4233  -87.32174  99.1%     -    0s
+     0     0  -99.34766    0   13 -9882.4233  -99.34766  99.0%     -    0s
+H    0     0                    -494.3390294  -99.34766  79.9%     -    0s
+     0     0  -99.37466    0   13 -494.33903  -99.37466  79.9%     -    0s
+     0     0 -115.64631    0   12 -494.33903 -115.64631  76.6%     -    0s
+     0     0 -116.18816    0   13 -494.33903 -116.18816  76.5%     -    0s
+     0     0 -116.64378    0   12 -494.33903 -116.64378  76.4%     -    0s
+     0     0 -116.76592    0   12 -494.33903 -116.76592  76.4%     -    0s
+     0     0 -116.76660    0   13 -494.33903 -116.76660  76.4%     -    0s
+     0     0 -132.97537    0   11 -494.33903 -132.97537  73.1%     -    0s
+     0     0 -134.52894    0   10 -494.33903 -134.52894  72.8%     -    0s
+     0     0 -134.61762    0   10 -494.33903 -134.61762  72.8%     -    0s
+     0     0 -134.61978    0   10 -494.33903 -134.61978  72.8%     -    0s
+     0     0 -135.80503    0   12 -494.33903 -135.80503  72.5%     -    0s
+     0     0 -136.55669    0   12 -494.33903 -136.55669  72.4%     -    0s
+     0     0 -136.60595    0   12 -494.33903 -136.60595  72.4%     -    0s
+     0     0 -136.71242    0   12 -494.33903 -136.71242  72.3%     -    0s
+     0     0 -136.71242    0   12 -494.33903 -136.71242  72.3%     -    0s
+     0     0 -136.85728    0   12 -494.33903 -136.85728  72.3%     -    0s
+     0     0 -136.86279    0   12 -494.33903 -136.86279  72.3%     -    0s
+     0     0 -137.10344    0   12 -494.33903 -137.10344  72.3%     -    0s
+     0     0 -137.10604    0   12 -494.33903 -137.10604  72.3%     -    0s
+     0     0 -137.44872    0   10 -494.33903 -137.44872  72.2%     -    0s
+     0     0 -137.82128    0    9 -494.33903 -137.82128  72.1%     -    0s
+     0     0 -137.89349    0    9 -494.33903 -137.89349  72.1%     -    0s
+     0     0 -139.71319    0    9 -494.33903 -139.71319  71.7%     -    0s
+     0     0 -139.78716    0    9 -494.33903 -139.78716  71.7%     -    0s
+     0     0 -139.79415    0    9 -494.33903 -139.79415  71.7%     -    0s
+     0     0 -140.00433    0    8 -494.33903 -140.00433  71.7%     -    0s
+     0     0 -140.04878    0   10 -494.33903 -140.04878  71.7%     -    0s
+     0     0 -140.07987    0    8 -494.33903 -140.07987  71.7%     -    0s
+     0     0 -140.11160    0    9 -494.33903 -140.11160  71.7%     -    0s
+     0     0 -140.11474    0   10 -494.33903 -140.11474  71.7%     -    0s
+     0     0 -140.46061    0    8 -494.33903 -140.46061  71.6%     -    0s
+     0     0 -140.46408    0    9 -494.33903 -140.46408  71.6%     -    0s
+     0     0 -141.45051    0    9 -494.33903 -141.45051  71.4%     -    0s
+     0     0 -141.61473    0   10 -494.33903 -141.61473  71.4%     -    0s
+     0     0 -141.61571    0   10 -494.33903 -141.61571  71.4%     -    0s
+     0     0 -141.63823    0   10 -494.33903 -141.63823  71.3%     -    0s
+     0     0 -141.63823    0    9 -494.33903 -141.63823  71.3%     -    0s
+     0     2 -141.64579    0    9 -494.33903 -141.64579  71.3%     -    0s
+H   27    15                    -494.3161536 -146.56600  70.3%  66.7    0s
+*   36    14               4    -494.2904815 -148.86243  69.9%  69.1    0s
+*   64    10               8    -494.2129570 -153.97581  68.8%  65.0    0s
+
+Cutting planes:
+  Gomory: 5
+  Implied bound: 27
+  MIR: 59
+  Flow cover: 26
+  RLT: 18
+
+Explored 101 nodes (9652 simplex iterations) in 0.91 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 5: -494.213 -494.29 -494.316 ... -9882.42
+No other solutions better than -494.213
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.942129570358e+02, best bound -4.942129570358e+02, gap 0.0000%
+solution G:
+{0: 0.005859375000000002}
+solution C:
+{0: 0.49169921875, 1: 0.125, 2: 0.10003379969097427, 3: 0.062499999999999986, 4: 0.03125, 5: 0.015625, 6: 0.015624999999999997, 7: 0.0019531249999999987, 8: 0.005859375, 9: 0.00024414062499999935, 10: 0.00024414062500000065, 11: 0.00146484375, 12: 0.001953125, 13: 0.006347656250000002, 14: 0.0019531250000000013}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 16
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1008 columns and 2199 nonzeros
+Model fingerprint: 0xb0f5a42d
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 14 rows and 112 columns
+Presolve time: 0.00s
+Presolved: 111 rows, 896 columns, 1982 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -4.7603935e-01   5.960217e+01   0.000000e+00      0s
+     287   -4.9421296e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 287 iterations and 0.00 seconds
+Optimal objective -4.942129570e+02
+solution G:
+{}
+solution C:
+{0: 0.49169921875, 1: 0.125, 2: 0.10003379969097426, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.001953125, 8: 0.005859375, 9: 0.000244140625, 10: 0.000244140625, 11: 0.00146484375, 12: 0.001953125, 13: 0.00634765625, 14: 0.001953125, 15: 0.005859375}
+**************************************************
+iteration 16
+{0: 0.49169921875, 1: 0.125, 2: 0.10003379969097426, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.001953125, 8: 0.005859375, 9: 0.000244140625, 10: 0.000244140625, 11: 0.00146484375, 12: 0.001953125, 13: 0.00634765625, 14: 0.001953125, 15: 0.005859375}
+[11, 8, 2, 7, 6, 9, 1, 149, 100, 0, 24, 291, 202, 107, 251, 5]
+**************************************************
+**************************************************
+number of chosen paths = 16
+[0, 1, 2, 3, 4, 5, 6, 8, 15, 13, 9, 10, 11, 7, 12, 14]
+[11, 8, 2, 7, 6, 9, 1, 100, 5, 107, 0, 24, 291, 149, 202, 251]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 17
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1101 columns and 3691 nonzeros
+Model fingerprint: 0x3e2e5e5c
+Variable types: 1086 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -4490.584842
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1100 columns, 6075 nonzeros
+Variable types: 1085 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.696678e+01, 326 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -86.96678    0   10 -4490.5848  -86.96678  98.1%     -    0s
+     0     0 -105.87243    0   12 -4490.5848 -105.87243  97.6%     -    0s
+H    0     0                    -494.2129570 -105.87243  78.6%     -    0s
+     0     0 -105.87258    0   12 -494.21296 -105.87258  78.6%     -    0s
+     0     0 -110.10875    0   12 -494.21296 -110.10875  77.7%     -    0s
+     0     0 -110.61727    0   12 -494.21296 -110.61727  77.6%     -    0s
+     0     0 -110.62342    0   12 -494.21296 -110.62342  77.6%     -    0s
+     0     0 -126.39021    0    9 -494.21296 -126.39021  74.4%     -    0s
+     0     0 -126.64774    0    8 -494.21296 -126.64774  74.4%     -    0s
+     0     0 -126.66023    0    8 -494.21296 -126.66023  74.4%     -    0s
+     0     0 -128.44361    0    9 -494.21296 -128.44361  74.0%     -    0s
+     0     0 -128.62268    0    9 -494.21296 -128.62268  74.0%     -    0s
+     0     0 -128.72428    0   10 -494.21296 -128.72428  74.0%     -    0s
+     0     0 -128.73414    0   10 -494.21296 -128.73414  74.0%     -    0s
+     0     0 -129.02512    0   10 -494.21296 -129.02512  73.9%     -    0s
+     0     0 -129.12886    0   11 -494.21296 -129.12886  73.9%     -    0s
+     0     0 -129.13544    0   11 -494.21296 -129.13544  73.9%     -    0s
+     0     0 -130.07512    0    9 -494.21296 -130.07512  73.7%     -    0s
+     0     0 -130.16985    0    8 -494.21296 -130.16985  73.7%     -    0s
+     0     0 -130.17335    0    9 -494.21296 -130.17335  73.7%     -    0s
+     0     0 -130.50954    0   10 -494.21296 -130.50954  73.6%     -    0s
+     0     0 -130.56464    0    9 -494.21296 -130.56464  73.6%     -    0s
+     0     0 -130.63512    0   10 -494.21296 -130.63512  73.6%     -    0s
+     0     0 -131.63470    0   11 -494.21296 -131.63470  73.4%     -    0s
+     0     0 -131.72784    0    9 -494.21296 -131.72784  73.3%     -    0s
+     0     0 -131.73662    0    9 -494.21296 -131.73662  73.3%     -    0s
+     0     0 -132.06485    0   10 -494.21296 -132.06485  73.3%     -    0s
+     0     0 -132.10696    0   11 -494.21296 -132.10696  73.3%     -    0s
+     0     0 -132.11012    0   11 -494.21296 -132.11012  73.3%     -    0s
+     0     0 -132.13179    0   10 -494.21296 -132.13179  73.3%     -    0s
+     0     0 -132.13179    0   10 -494.21296 -132.13179  73.3%     -    0s
+     0     2 -132.25618    0   10 -494.21296 -132.25618  73.2%     -    0s
+*   29    16               4    -494.1884370 -144.34890  70.8%  62.4    0s
+H   32    13                    -494.1509395 -144.34890  70.8%  58.0    0s
+*   35    14               5    -494.1407979 -144.87328  70.7%  65.0    0s
+
+Cutting planes:
+  Gomory: 5
+  Implied bound: 24
+  MIR: 68
+  Flow cover: 59
+  RLT: 22
+  BQP: 4
+
+Explored 113 nodes (10530 simplex iterations) in 0.85 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 5: -494.141 -494.151 -494.188 ... -4490.58
+No other solutions better than -494.141
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.941407978903e+02, best bound -4.941407978903e+02, gap 0.0000%
+solution G:
+{0: 0.0009765624999999786}
+solution C:
+{0: 0.4926757812499999, 1: 0.12402343750000001, 2: 0.09998465728313348, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.005859374999999914, 8: 0.005859375000000034, 9: 0.006347656250000034, 10: 0.000244140625, 11: 0.000244140625, 12: 0.0014648437500000763, 13: 0.0019531249999999766, 14: 0.001953125, 15: 0.0009765625000000447}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 17
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1010 columns and 2233 nonzeros
+Model fingerprint: 0x6ee1d52c
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 8 rows and 64 columns
+Presolve time: 0.00s
+Presolved: 117 rows, 946 columns, 2109 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -1.5867978e-01   6.400477e+01   0.000000e+00      0s
+     277   -4.9414080e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 277 iterations and 0.00 seconds
+Optimal objective -4.941407979e+02
+solution G:
+{}
+solution C:
+{0: 0.49267578125, 1: 0.1240234375, 2: 0.09998465728313341, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.005859375, 8: 0.005859375, 9: 0.00634765625, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.001953125, 14: 0.001953125, 15: 0.0009765625, 16: 0.0, 17: 0.0009765625}
+**************************************************
+iteration 17
+{0: 0.49267578125, 1: 0.1240234375, 2: 0.09998465728313341, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.005859375, 8: 0.005859375, 9: 0.00634765625, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.001953125, 14: 0.001953125, 15: 0.0009765625, 16: 0.0, 17: 0.0009765625}
+[11, 8, 2, 7, 6, 9, 1, 100, 5, 107, 0, 24, 291, 149, 202, 251, 48, 56]
+**************************************************
+**************************************************
+number of chosen paths = 17
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 17, 15]
+[11, 8, 2, 7, 6, 9, 1, 100, 5, 107, 0, 24, 291, 149, 202, 56, 251]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 18
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1102 columns and 3698 nonzeros
+Model fingerprint: 0x7b004391
+Variable types: 1087 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1101 columns, 6082 nonzeros
+Variable types: 1086 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.696678e+01, 308 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -86.96678    0   10          -  -86.96678      -     -    0s
+H    0     0                    -494.1407979  -86.96678  82.4%     -    0s
+     0     0 -100.49612    0   14 -494.14080 -100.49612  79.7%     -    0s
+     0     0 -100.49627    0   14 -494.14080 -100.49627  79.7%     -    0s
+     0     0 -107.66913    0   12 -494.14080 -107.66913  78.2%     -    0s
+     0     0 -108.14271    0   12 -494.14080 -108.14271  78.1%     -    0s
+     0     0 -108.15188    0   12 -494.14080 -108.15188  78.1%     -    0s
+     0     0 -123.92990    0    9 -494.14080 -123.92990  74.9%     -    0s
+     0     0 -125.01489    0    8 -494.14080 -125.01489  74.7%     -    0s
+     0     0 -125.06225    0    8 -494.14080 -125.06225  74.7%     -    0s
+     0     0 -125.06392    0    8 -494.14080 -125.06392  74.7%     -    0s
+     0     0 -133.48379    0   10 -494.14080 -133.48379  73.0%     -    0s
+     0     0 -133.86174    0   10 -494.14080 -133.86174  72.9%     -    0s
+     0     0 -133.99293    0   10 -494.14080 -133.99293  72.9%     -    0s
+     0     0 -134.18901    0   10 -494.14080 -134.18901  72.8%     -    0s
+     0     0 -134.57163    0   12 -494.14080 -134.57163  72.8%     -    0s
+     0     0 -134.60171    0   12 -494.14080 -134.60171  72.8%     -    0s
+     0     0 -134.60172    0   12 -494.14080 -134.60172  72.8%     -    0s
+     0     0 -134.87924    0   11 -494.14080 -134.87924  72.7%     -    0s
+     0     0 -134.90230    0   11 -494.14080 -134.90230  72.7%     -    0s
+     0     0 -135.35488    0   11 -494.14080 -135.35488  72.6%     -    0s
+     0     0 -135.49945    0   11 -494.14080 -135.49945  72.6%     -    0s
+     0     0 -135.51007    0   11 -494.14080 -135.51007  72.6%     -    0s
+     0     0 -136.05589    0   12 -494.14080 -136.05589  72.5%     -    0s
+     0     0 -136.06178    0   12 -494.14080 -136.06178  72.5%     -    0s
+     0     0 -136.59772    0   11 -494.14080 -136.59772  72.4%     -    0s
+     0     0 -136.61840    0   12 -494.14080 -136.61840  72.4%     -    0s
+     0     0 -137.21817    0   12 -494.14080 -137.21817  72.2%     -    0s
+     0     0 -137.39278    0   12 -494.14080 -137.39278  72.2%     -    0s
+     0     0 -137.40290    0   11 -494.14080 -137.40290  72.2%     -    0s
+     0     0 -137.57499    0   10 -494.14080 -137.57499  72.2%     -    0s
+     0     0 -137.59738    0   11 -494.14080 -137.59738  72.2%     -    0s
+     0     0 -137.74626    0   10 -494.14080 -137.74626  72.1%     -    0s
+     0     0 -137.74626    0   10 -494.14080 -137.74626  72.1%     -    0s
+     0     2 -138.31190    0   10 -494.14080 -138.31190  72.0%     -    0s
+*   18    14              14    -494.1193170 -148.65045  69.9%  88.1    0s
+*   75    11               6    -494.0982249 -165.68390  66.5%   124    0s
+
+Cutting planes:
+  Gomory: 6
+  Implied bound: 23
+  MIR: 106
+  Flow cover: 84
+  RLT: 14
+  Relax-and-lift: 1
+  BQP: 1
+
+Explored 107 nodes (17202 simplex iterations) in 1.09 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 3: -494.098 -494.119 -494.141 
+No other solutions better than -494.098
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.940982248739e+02, best bound -4.940982248739e+02, gap 0.0000%
+solution G:
+{0: 0.0014648437500000013}
+solution C:
+{0: 0.4912109375, 1: 0.1240234375, 2: 0.09851981353313341, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015624999999999997, 7: 0.005859375, 8: 0.007324218750000002, 9: 0.007812500000000005, 10: 0.0002441406250000055, 11: 0.00024414062499999452, 12: 0.00146484375, 13: 0.0004882812499999986, 14: 0.001953125, 15: 0.0009765625, 16: 0.0009765625}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 18
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1011 columns and 2244 nonzeros
+Model fingerprint: 0xcb8cd9f4
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 6 rows and 48 columns
+Presolve time: 0.00s
+Presolved: 119 rows, 963 columns, 2151 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -7.6401378e-02   6.430948e+01   0.000000e+00      0s
+     297   -4.9409822e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 297 iterations and 0.00 seconds
+Optimal objective -4.940982249e+02
+solution G:
+{}
+solution C:
+{0: 0.4912109375, 1: 0.1240234375, 2: 0.09851981353313341, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.005859375, 8: 0.00732421875, 9: 0.0078125, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.00048828125, 14: 0.001953125, 15: 0.0009765625, 16: 0.0009765625, 17: 0.0, 18: 0.00146484375}
+**************************************************
+iteration 18
+{0: 0.4912109375, 1: 0.1240234375, 2: 0.09851981353313341, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.005859375, 8: 0.00732421875, 9: 0.0078125, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.00048828125, 14: 0.001953125, 15: 0.0009765625, 16: 0.0009765625, 17: 0.0, 18: 0.00146484375}
+[11, 8, 2, 7, 6, 9, 1, 100, 5, 107, 0, 24, 291, 149, 202, 56, 251, 48, 50]
+**************************************************
+**************************************************
+number of chosen paths = 18
+[0, 1, 2, 3, 4, 5, 6, 8, 7, 9, 10, 11, 12, 14, 18, 15, 16, 13]
+[11, 8, 2, 7, 6, 9, 1, 5, 100, 107, 0, 24, 291, 202, 50, 56, 251, 149]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 19
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1103 columns and 3709 nonzeros
+Model fingerprint: 0x41c2c52a
+Variable types: 1088 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -3087.203013
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1102 columns, 6093 nonzeros
+Variable types: 1087 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.696678e+01, 284 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -86.96678    0   10 -3087.2030  -86.96678  97.2%     -    0s
+     0     0 -103.83927    0   12 -3087.2030 -103.83927  96.6%     -    0s
+H    0     0                    -494.0982249 -103.83927  79.0%     -    0s
+     0     0 -107.52996    0   12 -494.09822 -107.52996  78.2%     -    0s
+     0     0 -116.40846    0   12 -494.09822 -116.40846  76.4%     -    0s
+     0     0 -117.02636    0   13 -494.09822 -117.02636  76.3%     -    0s
+     0     0 -117.03833    0   13 -494.09822 -117.03833  76.3%     -    0s
+     0     0 -117.03933    0   13 -494.09822 -117.03933  76.3%     -    0s
+     0     0 -125.12888    0   10 -494.09822 -125.12888  74.7%     -    0s
+     0     0 -125.48962    0   11 -494.09822 -125.48962  74.6%     -    0s
+     0     0 -125.68147    0   11 -494.09822 -125.68147  74.6%     -    0s
+     0     0 -125.75916    0   11 -494.09822 -125.75916  74.5%     -    0s
+     0     0 -125.75985    0   11 -494.09822 -125.75985  74.5%     -    0s
+     0     0 -127.57587    0   10 -494.09822 -127.57587  74.2%     -    0s
+     0     0 -128.78240    0    9 -494.09822 -128.78240  73.9%     -    0s
+     0     0 -128.79483    0    9 -494.09822 -128.79483  73.9%     -    0s
+     0     0 -129.18707    0   11 -494.09822 -129.18707  73.9%     -    0s
+     0     0 -129.25238    0   10 -494.09822 -129.25238  73.8%     -    0s
+     0     0 -129.28426    0   12 -494.09822 -129.28426  73.8%     -    0s
+     0     0 -129.31458    0   10 -494.09822 -129.31458  73.8%     -    0s
+     0     0 -129.33806    0   12 -494.09822 -129.33806  73.8%     -    0s
+     0     0 -129.35882    0   12 -494.09822 -129.35882  73.8%     -    0s
+     0     0 -129.35933    0   12 -494.09822 -129.35933  73.8%     -    0s
+     0     0 -129.81690    0   11 -494.09822 -129.81690  73.7%     -    0s
+     0     0 -129.83515    0   12 -494.09822 -129.83515  73.7%     -    0s
+     0     0 -129.96891    0   12 -494.09822 -129.96891  73.7%     -    0s
+     0     0 -130.08978    0   12 -494.09822 -130.08978  73.7%     -    0s
+     0     0 -130.09412    0   12 -494.09822 -130.09412  73.7%     -    0s
+     0     0 -130.90352    0   11 -494.09822 -130.90352  73.5%     -    0s
+     0     0 -131.05927    0   12 -494.09822 -131.05927  73.5%     -    0s
+     0     0 -131.07073    0   12 -494.09822 -131.07073  73.5%     -    0s
+     0     0 -131.41327    0   10 -494.09822 -131.41327  73.4%     -    0s
+     0     0 -131.43169    0    9 -494.09822 -131.43169  73.4%     -    0s
+     0     0 -131.82484    0   10 -494.09822 -131.82484  73.3%     -    0s
+     0     0 -131.87781    0   10 -494.09822 -131.87781  73.3%     -    0s
+     0     0 -131.88384    0   10 -494.09822 -131.88384  73.3%     -    0s
+     0     0 -132.32134    0   10 -494.09822 -132.32134  73.2%     -    0s
+     0     0 -133.63366    0   10 -494.09822 -133.63366  73.0%     -    0s
+     0     0 -133.65342    0   10 -494.09822 -133.65342  73.0%     -    0s
+     0     0 -133.91372    0   11 -494.09822 -133.91372  72.9%     -    0s
+     0     0 -133.91508    0   11 -494.09822 -133.91508  72.9%     -    0s
+     0     0 -134.96067    0   11 -494.09822 -134.96067  72.7%     -    0s
+     0     0 -135.44276    0   11 -494.09822 -135.44276  72.6%     -    0s
+     0     0 -135.48687    0   11 -494.09822 -135.48687  72.6%     -    0s
+     0     0 -135.48691    0   11 -494.09822 -135.48691  72.6%     -    0s
+     0     0 -135.97442    0   13 -494.09822 -135.97442  72.5%     -    0s
+     0     0 -136.06828    0   11 -494.09822 -136.06828  72.5%     -    0s
+     0     0 -136.07604    0   11 -494.09822 -136.07604  72.5%     -    0s
+     0     0 -136.14872    0   12 -494.09822 -136.14872  72.4%     -    0s
+     0     0 -136.14872    0   12 -494.09822 -136.14872  72.4%     -    0s
+     0     2 -136.18111    0   12 -494.09822 -136.18111  72.4%     -    0s
+*   36    16               7    -494.0889816 -144.66986  70.7%  94.9    0s
+*   37    15               7    -494.0856387 -144.66986  70.7%  93.2    0s
+H   81    11                    -494.0838583 -151.98023  69.2%  91.2    1s
+*  107    11               7    -494.0783859 -152.17641  69.2%  80.1    1s
+
+Cutting planes:
+  Gomory: 5
+  Implied bound: 24
+  MIR: 105
+  Flow cover: 68
+  RLT: 15
+
+Explored 213 nodes (20027 simplex iterations) in 1.27 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 6: -494.078 -494.084 -494.086 ... -3087.2
+No other solutions better than -494.078
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.940783858636e+02, best bound -4.940783858636e+02, gap 0.0000%
+solution G:
+{0: 0.00146484375}
+solution C:
+{0: 0.490234375, 1: 0.12451171874999997, 2: 0.09898352357921307, 3: 0.0625, 4: 0.031249999999999955, 5: 0.015625, 6: 0.015625, 7: 0.0073242187499999965, 8: 0.005859375, 9: 0.007812499999999987, 10: 0.0002441406250000015, 11: 0.00024414062499999846, 12: 0.0, 13: 0.001953125, 14: 0.0009765624999999779, 15: 0.0004882812500000236, 16: 0.0019531249999999998, 17: 0.00048828125}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 19
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1013 columns and 2299 nonzeros
+Model fingerprint: 0x6e717a13
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 8 rows and 64 columns
+Presolve time: 0.00s
+Presolved: 117 rows, 949 columns, 2175 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -2.3508116e-01   6.054426e+01   0.000000e+00      0s
+     296   -4.9407839e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 296 iterations and 0.00 seconds
+Optimal objective -4.940783859e+02
+solution G:
+{}
+solution C:
+{0: 0.48876953125, 1: 0.12451171875, 2: 0.09898352357921299, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.00732421875, 8: 0.005859375, 9: 0.00927734375, 10: 0.000244140625, 11: 0.000244140625, 12: 0.0, 13: 0.001953125, 14: 0.0009765625, 15: 0.00048828125, 16: 0.001953125, 17: 0.00048828125, 18: 0.0, 19: 0.00146484375, 20: 0.0}
+**************************************************
+iteration 19
+{0: 0.48876953125, 1: 0.12451171875, 2: 0.09898352357921299, 3: 0.0625, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.00732421875, 8: 0.005859375, 9: 0.00927734375, 10: 0.000244140625, 11: 0.000244140625, 12: 0.0, 13: 0.001953125, 14: 0.0009765625, 15: 0.00048828125, 16: 0.001953125, 17: 0.00048828125, 18: 0.0, 19: 0.00146484375, 20: 0.0}
+[11, 8, 2, 7, 6, 9, 1, 5, 100, 107, 0, 24, 291, 202, 50, 56, 251, 149, 96, 3, 99]
+**************************************************
+**************************************************
+number of chosen paths = 19
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 19, 13, 16, 14, 17, 15, 18]
+[11, 8, 2, 7, 6, 9, 1, 5, 100, 107, 0, 24, 3, 202, 251, 50, 149, 56, 96]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 20
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1104 columns and 3741 nonzeros
+Model fingerprint: 0xaa703074
+Variable types: 1089 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -4942.150052
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1103 columns, 6125 nonzeros
+Variable types: 1088 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.692580e+01, 310 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -86.92580    0    9 -4942.1501  -86.92580  98.2%     -    0s
+     0     0 -109.44189    0   13 -4942.1501 -109.44189  97.8%     -    0s
+H    0     0                    -494.0783859 -109.44189  77.8%     -    0s
+     0     0 -109.44224    0   13 -494.07839 -109.44224  77.8%     -    0s
+     0     0 -116.04671    0   12 -494.07839 -116.04671  76.5%     -    0s
+     0     0 -116.46153    0   13 -494.07839 -116.46153  76.4%     -    0s
+     0     0 -116.52586    0   13 -494.07839 -116.52586  76.4%     -    0s
+     0     0 -131.95874    0   11 -494.07839 -131.95874  73.3%     -    0s
+     0     0 -133.29108    0   12 -494.07839 -133.29108  73.0%     -    0s
+     0     0 -133.91648    0   13 -494.07839 -133.91648  72.9%     -    0s
+     0     0 -134.04617    0   13 -494.07839 -134.04617  72.9%     -    0s
+     0     0 -134.04617    0   13 -494.07839 -134.04617  72.9%     -    0s
+     0     0 -134.31911    0   11 -494.07839 -134.31911  72.8%     -    0s
+     0     0 -138.88197    0   11 -494.07839 -138.88197  71.9%     -    0s
+     0     0 -138.88869    0   12 -494.07839 -138.88869  71.9%     -    0s
+     0     0 -138.96721    0   13 -494.07839 -138.96721  71.9%     -    0s
+     0     0 -138.96905    0   13 -494.07839 -138.96905  71.9%     -    0s
+     0     0 -139.05924    0   13 -494.07839 -139.05924  71.9%     -    0s
+     0     0 -139.06599    0   13 -494.07839 -139.06599  71.9%     -    0s
+     0     0 -139.78066    0   12 -494.07839 -139.78066  71.7%     -    0s
+     0     0 -139.79786    0   11 -494.07839 -139.79786  71.7%     -    0s
+     0     0 -140.53983    0    9 -494.07839 -140.53983  71.6%     -    0s
+     0     0 -140.68260    0   10 -494.07839 -140.68260  71.5%     -    0s
+     0     0 -140.77678    0    9 -494.07839 -140.77678  71.5%     -    0s
+     0     0 -140.88620    0   10 -494.07839 -140.88620  71.5%     -    0s
+     0     0 -140.90644    0   11 -494.07839 -140.90644  71.5%     -    0s
+     0     0 -140.93168    0   11 -494.07839 -140.93168  71.5%     -    0s
+     0     0 -140.98703    0   11 -494.07839 -140.98703  71.5%     -    0s
+     0     0 -140.99542    0   10 -494.07839 -140.99542  71.5%     -    0s
+     0     0 -141.18441    0   10 -494.07839 -141.18441  71.4%     -    0s
+     0     0 -141.18441    0   10 -494.07839 -141.18441  71.4%     -    0s
+     0     2 -141.28407    0   10 -494.07839 -141.28407  71.4%     -    0s
+*   40    14               7    -494.0783689 -152.03943  69.2%  83.7    0s
+*   48    12               8    -494.0669227 -152.27108  69.2%  79.7    0s
+
+Cutting planes:
+  Gomory: 4
+  Implied bound: 14
+  MIR: 47
+  Flow cover: 44
+  RLT: 17
+  Relax-and-lift: 1
+  BQP: 4
+
+Explored 85 nodes (7134 simplex iterations) in 0.73 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 4: -494.067 -494.078 -494.078 -4942.15 
+No other solutions better than -494.067
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.940669226764e+02, best bound -4.940669226764e+02, gap 0.0000%
+solution G:
+{0: 0.000244140625}
+solution C:
+{0: 0.48901367187500006, 1: 0.12451171875000003, 2: 0.09899095208272385, 3: 0.062255859375, 4: 0.0312499999999999, 5: 0.015625, 6: 0.015624999999999997, 7: 0.00732421875, 8: 0.005859375, 9: 0.009033203125, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.001953125, 14: 0.0019531249999999937, 15: 0.0009765625, 16: 0.00048828125, 17: 0.000488281249999988, 18: 0.0}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 20
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1016 columns and 2344 nonzeros
+Model fingerprint: 0xc9039cb0
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 2 rows and 16 columns
+Presolve time: 0.00s
+Presolved: 123 rows, 1000 columns, 2313 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -4.1139203e-02   6.623610e+01   0.000000e+00      0s
+     337   -4.9406692e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 337 iterations and 0.00 seconds
+Optimal objective -4.940669227e+02
+solution G:
+{}
+solution C:
+{0: 0.48876953125, 1: 0.12451171875, 2: 0.09899095208272382, 3: 0.062255859375, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.00732421875, 8: 0.005859375, 9: 0.00927734375, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.001953125, 14: 0.001953125, 15: 0.0009765625, 16: 0.00048828125, 17: 0.00048828125, 18: 0.0, 19: 0.0, 20: 0.0, 21: 0.0, 22: 0.000244140625, 23: 0.0}
+**************************************************
+iteration 20
+{0: 0.48876953125, 1: 0.12451171875, 2: 0.09899095208272382, 3: 0.062255859375, 4: 0.03125, 5: 0.015625, 6: 0.015625, 7: 0.00732421875, 8: 0.005859375, 9: 0.00927734375, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.001953125, 14: 0.001953125, 15: 0.0009765625, 16: 0.00048828125, 17: 0.00048828125, 18: 0.0, 19: 0.0, 20: 0.0, 21: 0.0, 22: 0.000244140625, 23: 0.0}
+[11, 8, 2, 7, 6, 9, 1, 5, 100, 107, 0, 24, 3, 202, 251, 50, 149, 56, 96, 48, 144, 103, 55, 151]
+**************************************************
+**************************************************
+number of chosen paths = 20
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 22, 19]
+[11, 8, 2, 7, 6, 9, 1, 5, 100, 107, 0, 24, 3, 202, 251, 50, 149, 56, 55, 48]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 21
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1105 columns and 3749 nonzeros
+Model fingerprint: 0x28c9a7b8
+Variable types: 1090 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -3058.305684
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1104 columns, 6133 nonzeros
+Variable types: 1089 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.692580e+01, 343 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -86.92580    0    9 -3058.3057  -86.92580  97.2%     -    0s
+H    0     0                    -494.0669227  -86.92580  82.4%     -    0s
+     0     0  -99.43827    0   13 -494.06692  -99.43827  79.9%     -    0s
+     0     0 -109.72603    0   13 -494.06692 -109.72603  77.8%     -    0s
+     0     0 -109.73870    0   13 -494.06692 -109.73870  77.8%     -    0s
+     0     0 -109.73871    0   13 -494.06692 -109.73871  77.8%     -    0s
+     0     0 -124.36371    0   10 -494.06692 -124.36371  74.8%     -    0s
+     0     0 -125.02480    0   10 -494.06692 -125.02480  74.7%     -    0s
+     0     0 -125.09929    0   10 -494.06692 -125.09929  74.7%     -    0s
+     0     0 -125.10036    0   10 -494.06692 -125.10036  74.7%     -    0s
+     0     0 -130.77988    0   11 -494.06692 -130.77988  73.5%     -    0s
+     0     0 -131.46274    0   10 -494.06692 -131.46274  73.4%     -    0s
+     0     0 -131.52220    0   10 -494.06692 -131.52220  73.4%     -    0s
+     0     0 -131.53877    0   10 -494.06692 -131.53877  73.4%     -    0s
+     0     0 -132.01113    0   12 -494.06692 -132.01113  73.3%     -    0s
+     0     0 -132.20338    0   11 -494.06692 -132.20338  73.2%     -    0s
+     0     0 -132.21861    0   11 -494.06692 -132.21861  73.2%     -    0s
+     0     0 -132.62585    0   13 -494.06692 -132.62585  73.2%     -    0s
+     0     0 -132.98053    0   12 -494.06692 -132.98053  73.1%     -    0s
+     0     0 -133.13070    0   14 -494.06692 -133.13070  73.1%     -    0s
+     0     0 -133.13318    0   14 -494.06692 -133.13318  73.1%     -    0s
+     0     0 -134.36413    0   14 -494.06692 -134.36413  72.8%     -    0s
+     0     0 -134.49658    0   14 -494.06692 -134.49658  72.8%     -    0s
+     0     0 -134.51055    0   14 -494.06692 -134.51055  72.8%     -    0s
+     0     0 -134.94450    0   13 -494.06692 -134.94450  72.7%     -    0s
+     0     0 -134.99070    0   14 -494.06692 -134.99070  72.7%     -    0s
+     0     0 -135.12892    0   13 -494.06692 -135.12892  72.6%     -    0s
+     0     0 -135.18731    0   14 -494.06692 -135.18731  72.6%     -    0s
+     0     0 -135.20200    0   14 -494.06692 -135.20200  72.6%     -    0s
+     0     0 -135.89521    0   13 -494.06692 -135.89521  72.5%     -    0s
+     0     0 -135.94165    0   13 -494.06692 -135.94165  72.5%     -    0s
+     0     0 -135.94166    0   13 -494.06692 -135.94166  72.5%     -    0s
+     0     0 -136.00691    0   12 -494.06692 -136.00691  72.5%     -    0s
+     0     0 -136.00691    0   12 -494.06692 -136.00691  72.5%     -    0s
+     0     2 -139.43713    0   12 -494.06692 -139.43713  71.8%     -    0s
+*   39    29              15    -494.0640418 -147.14889  70.2%  95.3    0s
+
+Cutting planes:
+  Gomory: 6
+  Implied bound: 19
+  MIR: 109
+  Flow cover: 91
+  RLT: 17
+
+Explored 215 nodes (23415 simplex iterations) in 1.17 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 3: -494.064 -494.067 -3058.31 
+No other solutions better than -494.064
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.940640417952e+02, best bound -4.940640417952e+02, gap 0.0000%
+solution G:
+{0: 0.00048828124999995186}
+solution C:
+{0: 0.48828125, 1: 0.12451171875, 2: 0.09899095208272383, 3: 0.062255859375, 4: 0.03124999999999997, 5: 0.015136718750000049, 6: 0.015624999999999997, 7: 0.0078125, 8: 0.005859375, 9: 0.009765625000000002, 10: 0.00024414062499999935, 11: 0.0002441406250000007, 12: 0.00146484375, 13: 0.001953125, 14: 0.001953125, 15: 0.0009765625, 16: 0.0, 17: 0.00048828125, 18: 0.000244140625, 19: 0.0}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 21
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1013 columns and 2277 nonzeros
+Model fingerprint: 0x599b13ba
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 4 rows and 32 columns
+Presolve time: 0.00s
+Presolved: 121 rows, 981 columns, 2215 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -4.7016232e-02   6.384152e+01   0.000000e+00      0s
+     319   -4.9406404e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 319 iterations and 0.00 seconds
+Optimal objective -4.940640418e+02
+solution G:
+{}
+solution C:
+{0: 0.48828125, 1: 0.12451171875, 2: 0.09899095208272382, 3: 0.062255859375, 4: 0.03125, 5: 0.01513671875, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.009765625, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.001953125, 14: 0.001953125, 15: 0.0009765625, 16: 0.0, 17: 0.00048828125, 18: 0.000244140625, 19: 0.0, 20: 0.00048828125}
+**************************************************
+iteration 21
+{0: 0.48828125, 1: 0.12451171875, 2: 0.09899095208272382, 3: 0.062255859375, 4: 0.03125, 5: 0.01513671875, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.009765625, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.001953125, 14: 0.001953125, 15: 0.0009765625, 16: 0.0, 17: 0.00048828125, 18: 0.000244140625, 19: 0.0, 20: 0.00048828125}
+[11, 8, 2, 7, 6, 9, 1, 5, 100, 107, 0, 24, 3, 202, 251, 50, 149, 56, 55, 48, 57]
+**************************************************
+**************************************************
+number of chosen paths = 21
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 20, 17, 18, 19, 16]
+[11, 8, 2, 7, 6, 9, 1, 5, 100, 107, 0, 24, 3, 202, 251, 50, 57, 56, 55, 48, 149]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 22
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1106 columns and 3769 nonzeros
+Model fingerprint: 0x262426b0
+Variable types: 1091 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -3162.163927
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1105 columns, 6153 nonzeros
+Variable types: 1090 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.692580e+01, 336 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -86.92580    0    9 -3162.1639  -86.92580  97.3%     -    0s
+     0     0  -97.65320    0   13 -3162.1639  -97.65320  96.9%     -    0s
+H    0     0                    -494.0640418  -97.65320  80.2%     -    0s
+     0     0 -111.56773    0   12 -494.06404 -111.56773  77.4%     -    0s
+     0     0 -115.15445    0   13 -494.06404 -115.15445  76.7%     -    0s
+     0     0 -116.01132    0   13 -494.06404 -116.01132  76.5%     -    0s
+     0     0 -116.01268    0   13 -494.06404 -116.01268  76.5%     -    0s
+     0     0 -126.48658    0   10 -494.06404 -126.48658  74.4%     -    0s
+     0     0 -129.20830    0   10 -494.06404 -129.20830  73.8%     -    0s
+     0     0 -129.40597    0   10 -494.06404 -129.40597  73.8%     -    0s
+     0     0 -129.42768    0   10 -494.06404 -129.42768  73.8%     -    0s
+     0     0 -130.91516    0   10 -494.06404 -130.91516  73.5%     -    0s
+     0     0 -131.03468    0   10 -494.06404 -131.03468  73.5%     -    0s
+     0     0 -131.03804    0   10 -494.06404 -131.03804  73.5%     -    0s
+     0     0 -131.33448    0   11 -494.06404 -131.33448  73.4%     -    0s
+     0     0 -131.34732    0   11 -494.06404 -131.34732  73.4%     -    0s
+     0     0 -131.61144    0   10 -494.06404 -131.61144  73.4%     -    0s
+     0     0 -131.63067    0   10 -494.06404 -131.63067  73.4%     -    0s
+     0     0 -131.63580    0   10 -494.06404 -131.63580  73.4%     -    0s
+     0     0 -131.97939    0   10 -494.06404 -131.97939  73.3%     -    0s
+     0     0 -132.46561    0   10 -494.06404 -132.46561  73.2%     -    0s
+     0     0 -132.51624    0   10 -494.06404 -132.51624  73.2%     -    0s
+     0     0 -133.87311    0   11 -494.06404 -133.87311  72.9%     -    0s
+     0     0 -134.42349    0   11 -494.06404 -134.42349  72.8%     -    0s
+     0     0 -134.45843    0   11 -494.06404 -134.45843  72.8%     -    0s
+     0     0 -134.46574    0   11 -494.06404 -134.46574  72.8%     -    0s
+     0     0 -135.25674    0   13 -494.06404 -135.25674  72.6%     -    0s
+     0     0 -135.27334    0   13 -494.06404 -135.27334  72.6%     -    0s
+     0     0 -135.61114    0   14 -494.06404 -135.61114  72.6%     -    0s
+     0     0 -135.91723    0   14 -494.06404 -135.91723  72.5%     -    0s
+     0     0 -135.95304    0   14 -494.06404 -135.95304  72.5%     -    0s
+     0     0 -135.96577    0   14 -494.06404 -135.96577  72.5%     -    0s
+     0     0 -135.98910    0   14 -494.06404 -135.98910  72.5%     -    0s
+     0     0 -135.99944    0   13 -494.06404 -135.99944  72.5%     -    0s
+     0     0 -136.35869    0   13 -494.06404 -136.35869  72.4%     -    0s
+     0     0 -136.36134    0   13 -494.06404 -136.36134  72.4%     -    0s
+     0     0 -136.39821    0   13 -494.06404 -136.39821  72.4%     -    0s
+     0     0 -136.39821    0   13 -494.06404 -136.39821  72.4%     -    0s
+     0     2 -136.66319    0   13 -494.06404 -136.66319  72.3%     -    0s
+
+Cutting planes:
+  Gomory: 4
+  Implied bound: 20
+  MIR: 86
+  Flow cover: 67
+  RLT: 18
+
+Explored 217 nodes (21347 simplex iterations) in 1.17 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 2: -494.064 -3162.16 
+No other solutions better than -494.064
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.940640417952e+02, best bound -4.940640417952e+02, gap 0.0000%
+solution G:
+{0: 0.0}
+solution C:
+{0: 0.48828125, 1: 0.12451171875, 2: 0.09899095208272382, 3: 0.062255859375, 4: 0.03125, 5: 0.01513671875, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.009765625, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.001953125, 14: 0.001953125, 15: 0.0009765625, 16: 0.00048828125, 17: 0.00048828125, 18: 0.000244140625, 19: 0.0, 20: 0.0}
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 22
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1019 columns and 2454 nonzeros
+Model fingerprint: 0x3ceccae1
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve time: 0.00s
+Presolved: 125 rows, 1019 columns, 2454 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -0.0000000e+00   5.658485e+01   0.000000e+00      0s
+     323   -4.9406404e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 323 iterations and 0.00 seconds
+Optimal objective -4.940640418e+02
+solution G:
+{}
+solution C:
+{0: 0.48828125, 1: 0.12451171875, 2: 0.09899095208272382, 3: 0.062255859375, 4: 0.03125, 5: 0.01513671875, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.009765625, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.001953125, 14: 0.001953125, 15: 0.0009765625, 16: 0.00048828125, 17: 0.00048828125, 18: 0.000244140625, 19: 0.0, 20: 0.0, 21: 0.0, 22: 0.0, 23: 0.0, 24: 0.0, 25: 0.0, 26: 0.0}
+**************************************************
+iteration 22
+{0: 0.48828125, 1: 0.12451171875, 2: 0.09899095208272382, 3: 0.062255859375, 4: 0.03125, 5: 0.01513671875, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.009765625, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.001953125, 14: 0.001953125, 15: 0.0009765625, 16: 0.00048828125, 17: 0.00048828125, 18: 0.000244140625, 19: 0.0, 20: 0.0, 21: 0.0, 22: 0.0, 23: 0.0, 24: 0.0, 25: 0.0, 26: 0.0}
+[11, 8, 2, 7, 6, 9, 1, 5, 100, 107, 0, 24, 3, 202, 251, 50, 57, 56, 55, 48, 149, 192, 96, 288, 240, 144, 336]
+**************************************************
+**************************************************
+number of chosen paths = 22
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 22, 25]
+[11, 8, 2, 7, 6, 9, 1, 5, 100, 107, 0, 24, 3, 202, 251, 50, 57, 56, 55, 48, 96, 144]
+**************************************************
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 23
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 675 rows, 1107 columns and 3810 nonzeros
+Model fingerprint: 0x580ebab8
+Variable types: 1092 continuous, 15 integer (15 binary)
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Found heuristic solution: objective -5377.562857
+Presolve removed 82 rows and 1 columns
+Presolve time: 0.01s
+Presolved: 593 rows, 1106 columns, 6194 nonzeros
+Variable types: 1091 continuous, 15 integer (15 binary)
+
+Root relaxation: objective -8.692580e+01, 312 iterations, 0.01 seconds
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0  -86.92580    0    9 -5377.5629  -86.92580  98.4%     -    0s
+H    0     0                    -494.0640418  -86.92580  82.4%     -    0s
+     0     0  -99.30395    0   12 -494.06404  -99.30395  79.9%     -    0s
+     0     0 -112.04896    0   14 -494.06404 -112.04896  77.3%     -    0s
+     0     0 -112.62358    0   14 -494.06404 -112.62358  77.2%     -    0s
+     0     0 -112.63803    0   13 -494.06404 -112.63803  77.2%     -    0s
+     0     0 -112.64373    0   14 -494.06404 -112.64373  77.2%     -    0s
+     0     0 -127.05257    0    9 -494.06404 -127.05257  74.3%     -    0s
+     0     0 -127.23532    0   13 -494.06404 -127.23532  74.2%     -    0s
+     0     0 -127.23625    0   13 -494.06404 -127.23625  74.2%     -    0s
+     0     0 -128.14639    0   11 -494.06404 -128.14639  74.1%     -    0s
+     0     0 -128.86387    0   12 -494.06404 -128.86387  73.9%     -    0s
+     0     0 -128.87202    0   12 -494.06404 -128.87202  73.9%     -    0s
+     0     0 -131.56369    0   12 -494.06404 -131.56369  73.4%     -    0s
+     0     0 -131.74811    0   12 -494.06404 -131.74811  73.3%     -    0s
+     0     0 -131.75225    0   12 -494.06404 -131.75225  73.3%     -    0s
+     0     0 -132.04915    0    8 -494.06404 -132.04915  73.3%     -    0s
+     0     0 -132.25383    0   10 -494.06404 -132.25383  73.2%     -    0s
+     0     0 -132.25384    0   10 -494.06404 -132.25384  73.2%     -    0s
+     0     0 -132.61969    0    9 -494.06404 -132.61969  73.2%     -    0s
+     0     0 -133.03516    0   11 -494.06404 -133.03516  73.1%     -    0s
+     0     0 -133.11150    0   12 -494.06404 -133.11150  73.1%     -    0s
+     0     0 -133.14185    0   12 -494.06404 -133.14185  73.1%     -    0s
+     0     0 -133.14313    0   12 -494.06404 -133.14313  73.1%     -    0s
+     0     0 -133.74636    0   12 -494.06404 -133.74636  72.9%     -    0s
+     0     0 -133.75999    0   12 -494.06404 -133.75999  72.9%     -    0s
+     0     0 -133.81716    0   12 -494.06404 -133.81716  72.9%     -    0s
+     0     0 -133.81716    0   12 -494.06404 -133.81716  72.9%     -    0s
+     0     2 -134.04333    0   12 -494.06404 -134.04333  72.9%     -    0s
+
+Cutting planes:
+  Gomory: 6
+  Implied bound: 17
+  MIR: 60
+  Flow cover: 50
+  RLT: 17
+  BQP: 4
+
+Explored 129 nodes (9150 simplex iterations) in 0.79 seconds
+Thread count was 1 (of 28 available processors)
+
+Solution count 2: -494.064 -5377.56 
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective -4.940640417952e+02, best bound -4.940640155435e+02, gap 0.0000%
+solution G:
+{0: 0.000244140625}
+solution C:
+{0: 0.48828125, 1: 0.12451171875, 2: 0.09899095208272382, 3: 0.062255859375, 4: 0.03125, 5: 0.01513671875, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.009765625, 10: 0.0, 11: 0.000244140625, 12: 0.00146484375, 13: 0.001953125, 14: 0.001953125, 15: 0.0009765625, 16: 0.00048828125, 17: 0.00048828125, 18: 0.000244140625, 19: 0.0, 20: 0.0, 21: 0.0}
+++++++++++++++++++++++++++++++++++++++++++++++++++
+no paths were added
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Changed value of parameter Threads to 1
+   Prev: 0  Min: 0  Max: 1024  Default: 0
+Changed value of parameter TimeLimit to 1800.0
+   Prev: inf  Min: 0.0  Max: inf  Default: inf
+Parameter OutputFlag unchanged
+   Value: 1  Min: 0  Max: 1  Default: 1
+Parameter ConcurrentMIP unchanged
+   Value: 1  Min: 1  Max: 64  Default: 1
+Changed value of parameter Method to 4
+   Prev: -1  Min: -1  Max: 5  Default: -1
+Changed value of parameter IntFeasTol to 1e-09
+   Prev: 1e-05  Min: 1e-09  Max: 0.1  Default: 1e-05
+Changed value of parameter FeasibilityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+Changed value of parameter OptimalityTol to 1e-09
+   Prev: 1e-06  Min: 1e-09  Max: 0.01  Default: 1e-06
+--------------------------------------------------
+greedy solver iteration 23
+number of splice edges is 15
+number of phasing reads is 62
+length of shorted possible transcript is 1537.0
+--------------------------------------------------
+Gurobi Optimizer version 9.0.3 build v9.0.3rc0 (linux64)
+Optimize a model with 125 rows, 1014 columns and 2318 nonzeros
+Model fingerprint: 0x46985369
+Coefficient statistics:
+  Matrix range     [6e-05, 3e+04]
+  Objective range  [3e-04, 1e+04]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [1e+00, 2e+03]
+Presolve removed 2 rows and 16 columns
+Presolve time: 0.00s
+Presolved: 123 rows, 998 columns, 2287 nonzeros
+
+Iteration    Objective       Primal Inf.    Dual Inf.      Time
+       0   -4.1139203e-02   6.565603e+01   0.000000e+00      0s
+     313   -4.9406404e+02   0.000000e+00   0.000000e+00      0s
+
+Solved in 313 iterations and 0.00 seconds
+Optimal objective -4.940640418e+02
+solution G:
+{}
+solution C:
+{0: 0.48828125, 1: 0.12451171875, 2: 0.09899095208272382, 3: 0.062255859375, 4: 0.03125, 5: 0.01513671875, 6: 0.015625, 7: 0.0078125, 8: 0.005859375, 9: 0.009765625, 10: 0.000244140625, 11: 0.000244140625, 12: 0.00146484375, 13: 0.001953125, 14: 0.001953125, 15: 0.0009765625, 16: 0.00048828125, 17: 0.00048828125, 18: 0.000244140625, 19: 0.0, 20: 0.0, 21: 0.0}

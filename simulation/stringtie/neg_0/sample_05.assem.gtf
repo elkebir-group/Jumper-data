@@ -1,0 +1,36 @@
+# stringtie -p 1 -o abundance/stringtie/neg_0/sample_05.assem.gtf -A abundance/stringtie/neg_0/sample_05.abund.tab bam/star_XS/neg_0/sample_05.Aligned.sortedByCoord.out.bam
+# StringTie version 2.1.4
+NC_045512.2	StringTie	transcript	1	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.1"; cov "56342.890625"; FPKM "94690.656250"; TPM "268024.968750";
+NC_045512.2	StringTie	exon	1	65	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.1"; exon_number "1"; cov "5579.276855";
+NC_045512.2	StringTie	exon	27753	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.1"; exon_number "2"; cov "57876.890625";
+NC_045512.2	StringTie	transcript	1	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.2"; cov "46328.082031"; FPKM "77859.625000"; TPM "220384.203125";
+NC_045512.2	StringTie	exon	1	66	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.2"; exon_number "1"; cov "8972.536133";
+NC_045512.2	StringTie	exon	21047	22550	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.2"; exon_number "2"; cov "161.684158";
+NC_045512.2	StringTie	exon	27038	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.2"; exon_number "3"; cov "71415.218750";
+NC_045512.2	StringTie	transcript	1	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.3"; cov "33440.472656"; FPKM "56200.531250"; TPM "159077.421875";
+NC_045512.2	StringTie	exon	1	63	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.3"; exon_number "1"; cov "6819.573730";
+NC_045512.2	StringTie	exon	25379	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.3"; exon_number "2"; cov "33811.105469";
+NC_045512.2	StringTie	transcript	1	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.4"; cov "20080.837891"; FPKM "33748.140625"; TPM "95525.203125";
+NC_045512.2	StringTie	exon	1	55	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.4"; exon_number "1"; cov "1992.880005";
+NC_045512.2	StringTie	exon	1167	1173	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.4"; exon_number "2"; cov "2089.839355";
+NC_045512.2	StringTie	exon	27884	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.4"; exon_number "3"; cov "20635.677734";
+NC_045512.2	StringTie	transcript	1	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.5"; cov "11022.990234"; FPKM "18525.392578"; TPM "52436.722656";
+NC_045512.2	StringTie	exon	1	48	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.5"; exon_number "1"; cov "928.132141";
+NC_045512.2	StringTie	exon	25307	25320	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.5"; exon_number "2"; cov "3162.584717";
+NC_045512.2	StringTie	exon	28262	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.5"; exon_number "3"; cov "11385.109375";
+NC_045512.2	StringTie	transcript	1	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.6"; cov "10681.314453"; FPKM "17951.167969"; TPM "50811.359375";
+NC_045512.2	StringTie	exon	1	63	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.6"; exon_number "1"; cov "879.774902";
+NC_045512.2	StringTie	exon	27479	27493	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.6"; exon_number "2"; cov "639.219849";
+NC_045512.2	StringTie	exon	28266	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.6"; exon_number "3"; cov "11150.257812";
+NC_045512.2	StringTie	transcript	1	29903	1000	+	.	gene_id "STRG.2"; transcript_id "STRG.2.1"; cov "10514.676758"; FPKM "17671.113281"; TPM "50018.660156";
+NC_045512.2	StringTie	exon	1	52	1000	+	.	gene_id "STRG.2"; transcript_id "STRG.2.1"; exon_number "1"; cov "901.994507";
+NC_045512.2	StringTie	exon	20900	20909	1000	+	.	gene_id "STRG.2"; transcript_id "STRG.2.1"; exon_number "2"; cov "2822.718262";
+NC_045512.2	StringTie	exon	28250	29903	1000	+	.	gene_id "STRG.2"; transcript_id "STRG.2.1"; exon_number "3"; cov "10863.395508";
+NC_045512.2	StringTie	transcript	1	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.7"; cov "4282.965332"; FPKM "7198.011719"; TPM "20374.205078";
+NC_045512.2	StringTie	exon	1	56	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.7"; exon_number "1"; cov "365.203186";
+NC_045512.2	StringTie	exon	2215	2226	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.7"; exon_number "2"; cov "903.416687";
+NC_045512.2	StringTie	exon	28262	29903	1000	-	.	gene_id "STRG.1"; transcript_id "STRG.1.7"; exon_number "3"; cov "4441.277832";
+NC_045512.2	StringTie	transcript	1	29903	1000	+	.	gene_id "STRG.2"; transcript_id "STRG.2.2"; cov "3029.367432"; FPKM "5091.197754"; TPM "14410.799805";
+NC_045512.2	StringTie	exon	1	47	1000	+	.	gene_id "STRG.2"; transcript_id "STRG.2.2"; exon_number "1"; cov "252.793320";
+NC_045512.2	StringTie	exon	14135	14149	1000	+	.	gene_id "STRG.2"; transcript_id "STRG.2.2"; exon_number "2"; cov "864.564575";
+NC_045512.2	StringTie	exon	28262	29903	1000	+	.	gene_id "STRG.2"; transcript_id "STRG.2.2"; exon_number "3"; cov "3128.618652";

@@ -1,0 +1,22 @@
+{
+    "read_files": "[ /scratch/data/covid19/transcriptomics/u6sq7/osfstorage/sars-cov-2-transcriptome/rnaseq-mgi/rawdata-1/Vero_SCV2_1.fq.gz, /scratch/data/covid19/transcriptomics/u6sq7/osfstorage/sars-cov-2-transcriptome/rnaseq-mgi/rawdata-1/Vero_SCV2_2.fq.gz]",
+    "expected_format": "ISR",
+    "compatible_fragment_ratio": 1.0,
+    "num_compatible_fragments": 213454960,
+    "num_assigned_fragments": 213454960,
+    "num_frags_with_concordant_consistent_mappings": 206196284,
+    "num_frags_with_inconsistent_or_orphan_mappings": 7411603,
+    "strand_mapping_bias": 4.8497478991922679e-9,
+    "MSF": 0,
+    "OSF": 0,
+    "ISF": 1,
+    "MSR": 0,
+    "OSR": 0,
+    "ISR": 206196284,
+    "SF": 2049779,
+    "SR": 5361823,
+    "MU": 0,
+    "OU": 0,
+    "IU": 0,
+    "U": 0
+}
